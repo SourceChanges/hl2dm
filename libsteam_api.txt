@@ -1,800 +1,800 @@
-         U abort@@GLIBC_2.0
-         U access@@GLIBC_2.0
-00027058 A __bss_start
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U closedir@@GLIBC_2.0
-         U close@@GLIBC_2.0
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_begin_catch@@CXXABI_1.3
-         U __cxa_end_catch@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U __cxa_pure_virtual@@CXXABI_1.3
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlmopen@@GLIBC_2.3.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-00027058 A _edata
-00028528 A _end
-         U __errno_location@@GLIBC_2.0
-         U fclose@@GLIBC_2.1
-         U fgets@@GLIBC_2.0
-0001bd3c T _fini
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U fprintf@@GLIBC_2.0
-         U fputc@@GLIBC_2.0
-         U fputs@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U fwrite@@GLIBC_2.0
-         U getenv@@GLIBC_2.0
-000102b1 T GetHSteamPipe
-000102dc T GetHSteamUser
-         w __gmon_start__
-00028350 B g_pSteamClientGameServer
-         U __gxx_personality_v0@@CXXABI_1.3
-0000cf8c T _init
-         w _Jv_RegisterClasses
-         U kill@@GLIBC_2.0
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U mount@@GLIBC_2.0
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_mutexattr_destroy@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U readdir64@@GLIBC_2.2
-         U read@@GLIBC_2.0
-         U realpath@@GLIBC_2.3
-         U rename@@GLIBC_2.0
-         U rmdir@@GLIBC_2.0
-         U scandir64@@GLIBC_2.2
-         U scandir@@GLIBC_2.0
-         U setenv@@GLIBC_2.0
-         U snprintf@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-         U __stack_chk_fail@@GLIBC_2.4
-         U statvfs64@@GLIBC_2.1
-         U statvfs@@GLIBC_2.1
-         U stderr@@GLIBC_2.0
-0001029f T SteamAPI_GetHSteamPipe
-000102ca T SteamAPI_GetHSteamUser
-00010817 T SteamAPI_GetSteamInstallPath
-00011cad T SteamAPI_Init
-00011c65 T SteamAPI_InitSafe
-00010661 T SteamAPI_IsSteamRunning
-00017aa6 T SteamAPI_ISteamAppList_GetAppBuildId
-00017a7b T SteamAPI_ISteamAppList_GetAppInstallDir
-00017a50 T SteamAPI_ISteamAppList_GetAppName
-00017a2d T SteamAPI_ISteamAppList_GetInstalledApps
-00017a1b T SteamAPI_ISteamAppList_GetNumInstalledApps
-00015ecc T SteamAPI_ISteamApps_BGetDLCDataByIndex
-00015fed T SteamAPI_ISteamApps_BIsAppInstalled
-00015e09 T SteamAPI_ISteamApps_BIsCybercafe
-00015e70 T SteamAPI_ISteamApps_BIsDlcInstalled
-00015df6 T SteamAPI_ISteamApps_BIsLowViolence
-00015de4 T SteamAPI_ISteamApps_BIsSubscribed
-00015e55 T SteamAPI_ISteamApps_BIsSubscribedApp
-00015ea6 T SteamAPI_ISteamApps_BIsSubscribedFromFreeWeekend
-00015e1c T SteamAPI_ISteamApps_BIsVACBanned
-00016074 T SteamAPI_ISteamApps_GetAppBuildId
-00015fc2 T SteamAPI_ISteamApps_GetAppInstallDir
-00016008 T SteamAPI_ISteamApps_GetAppOwner
-00015e42 T SteamAPI_ISteamApps_GetAvailableGameLanguages
-00015f58 T SteamAPI_ISteamApps_GetCurrentBetaName
-00015e2f T SteamAPI_ISteamApps_GetCurrentGameLanguage
-00015eb9 T SteamAPI_ISteamApps_GetDLCCount
-00016049 T SteamAPI_ISteamApps_GetDlcDownloadProgress
-00015e8b T SteamAPI_ISteamApps_GetEarliestPurchaseUnixTime
-00015f97 T SteamAPI_ISteamApps_GetInstalledDepots
-0001602e T SteamAPI_ISteamApps_GetLaunchQueryParam
-00015f07 T SteamAPI_ISteamApps_InstallDLC
-00015f7b T SteamAPI_ISteamApps_MarkContentCorrupt
-00015f3d T SteamAPI_ISteamApps_RequestAppProofOfPurchaseKey
-00015f22 T SteamAPI_ISteamApps_UninstallDLC
-00012c04 T SteamAPI_ISteamClient_BReleaseSteamPipe
-00012f0c T SteamAPI_ISteamClient_BShutdownIfAllPipesClosed
-00012c1f T SteamAPI_ISteamClient_ConnectToGlobalUser
-00012c3a T SteamAPI_ISteamClient_CreateLocalUser
-00012bf2 T SteamAPI_ISteamClient_CreateSteamPipe
-00012ede T SteamAPI_ISteamClient_GetIPCCallCount
-00012fcb T SteamAPI_ISteamClient_GetISteamAppList
-00012e1f T SteamAPI_ISteamClient_GetISteamApps
-00012f75 T SteamAPI_ISteamClient_GetISteamController
-00012cfa T SteamAPI_ISteamClient_GetISteamFriends
-00012cab T SteamAPI_ISteamClient_GetISteamGameServer
-00012df4 T SteamAPI_ISteamClient_GetISteamGameServerStats
-00012d9e T SteamAPI_ISteamClient_GetISteamGenericInterface
-0001304c T SteamAPI_ISteamClient_GetISteamHTMLSurface
-00012f1f T SteamAPI_ISteamClient_GetISteamHTTP
-000130ce T SteamAPI_ISteamClient_GetISteamInventory
-00012d48 T SteamAPI_ISteamClient_GetISteamMatchmaking
-00012d73 T SteamAPI_ISteamClient_GetISteamMatchmakingServers
-00012ff6 T SteamAPI_ISteamClient_GetISteamMusic
-00013021 T SteamAPI_ISteamClient_GetISteamMusicRemote
-00012e4a T SteamAPI_ISteamClient_GetISteamNetworking
-00012e75 T SteamAPI_ISteamClient_GetISteamRemoteStorage
-00012ea0 T SteamAPI_ISteamClient_GetISteamScreenshots
-00012fa0 T SteamAPI_ISteamClient_GetISteamUGC
-00012f4a T SteamAPI_ISteamClient_GetISteamUnifiedMessages
-00012c80 T SteamAPI_ISteamClient_GetISteamUser
-00012dc9 T SteamAPI_ISteamClient_GetISteamUserStats
-00012d25 T SteamAPI_ISteamClient_GetISteamUtils
-000130fc T SteamAPI_ISteamClient_GetISteamVideo
-00012c5d T SteamAPI_ISteamClient_ReleaseUser
-00013092 T SteamAPI_ISteamClient_Remove_SteamAPI_CPostAPIResultInProcess
-00012ecb T SteamAPI_ISteamClient_RunFrame
-00012cd6 T SteamAPI_ISteamClient_SetLocalIPBinding
-000130b0 T SteamAPI_ISteamClient_Set_SteamAPI_CCheckCallbackRegisteredInProcess
-00013077 T SteamAPI_ISteamClient_Set_SteamAPI_CPostAPIResultInProcess
-00012ef1 T SteamAPI_ISteamClient_SetWarningMessageHook
-00016e73 T SteamAPI_ISteamController_GetControllerState
-00016e33 T SteamAPI_ISteamController_Init
-00016e60 T SteamAPI_ISteamController_RunFrame
-00016ec2 T SteamAPI_ISteamController_SetOverrideMode
-00016e4d T SteamAPI_ISteamController_Shutdown
-00016e96 T SteamAPI_ISteamController_TriggerHapticPulse
-00013940 T SteamAPI_ISteamFriends_ActivateGameOverlay
-000139f2 T SteamAPI_ISteamFriends_ActivateGameOverlayInviteDialog
-000139a5 T SteamAPI_ISteamFriends_ActivateGameOverlayToStore
-0001395b T SteamAPI_ISteamFriends_ActivateGameOverlayToUser
-0001398a T SteamAPI_ISteamFriends_ActivateGameOverlayToWebPage
-00013bdf T SteamAPI_ISteamFriends_ClearRichPresence
-00013f51 T SteamAPI_ISteamFriends_CloseClanChatWindowInSteam
-0001384d T SteamAPI_ISteamFriends_DownloadClanActivityCounts
-0001406a T SteamAPI_ISteamFriends_EnumerateFollowingList
-00013dfa T SteamAPI_ISteamFriends_GetChatMemberByIndex
-0001380e T SteamAPI_ISteamFriends_GetClanActivityCounts
-00013790 T SteamAPI_ISteamFriends_GetClanByIndex
-00013dd0 T SteamAPI_ISteamFriends_GetClanChatMemberCount
-00013e71 T SteamAPI_ISteamFriends_GetClanChatMessage
-0001377d T SteamAPI_ISteamFriends_GetClanCount
-000137c0 T SteamAPI_ISteamFriends_GetClanName
-00013b5e T SteamAPI_ISteamFriends_GetClanOfficerByIndex
-00013b34 T SteamAPI_ISteamFriends_GetClanOfficerCount
-00013af7 T SteamAPI_ISteamFriends_GetClanOwner
-000137e7 T SteamAPI_ISteamFriends_GetClanTag
-00013cf5 T SteamAPI_ISteamFriends_GetCoplayFriend
-00013cdf T SteamAPI_ISteamFriends_GetCoplayFriendCount
-00014016 T SteamAPI_ISteamFriends_GetFollowerCount
-00013561 T SteamAPI_ISteamFriends_GetFriendByIndex
-00013d52 T SteamAPI_ISteamFriends_GetFriendCoplayGame
-00013d28 T SteamAPI_ISteamFriends_GetFriendCoplayTime
-00013546 T SteamAPI_ISteamFriends_GetFriendCount
-00013870 T SteamAPI_ISteamFriends_GetFriendCountFromSource
-00013897 T SteamAPI_ISteamFriends_GetFriendFromSourceByIndex
-0001360e T SteamAPI_ISteamFriends_GetFriendGamePlayed
-00013fcc T SteamAPI_ISteamFriends_GetFriendMessage
-000135e7 T SteamAPI_ISteamFriends_GetFriendPersonaName
-0001363d T SteamAPI_ISteamFriends_GetFriendPersonaNameHistory
-000135c0 T SteamAPI_ISteamFriends_GetFriendPersonaState
-00013599 T SteamAPI_ISteamFriends_GetFriendRelationship
-00013bf5 T SteamAPI_ISteamFriends_GetFriendRichPresence
-00013c51 T SteamAPI_ISteamFriends_GetFriendRichPresenceKeyByIndex
-00013c27 T SteamAPI_ISteamFriends_GetFriendRichPresenceKeyCount
-000136ba T SteamAPI_ISteamFriends_GetFriendsGroupCount
-000136cd T SteamAPI_ISteamFriends_GetFriendsGroupIDByIndex
-00013704 T SteamAPI_ISteamFriends_GetFriendsGroupMembersCount
-00013720 T SteamAPI_ISteamFriends_GetFriendsGroupMembersList
-000136e8 T SteamAPI_ISteamFriends_GetFriendsGroupName
-0001366c T SteamAPI_ISteamFriends_GetFriendSteamLevel
-00013a70 T SteamAPI_ISteamFriends_GetLargeFriendAvatar
-00013a46 T SteamAPI_ISteamFriends_GetMediumFriendAvatar
-00013506 T SteamAPI_ISteamFriends_GetPersonaName
-00013533 T SteamAPI_ISteamFriends_GetPersonaState
-00013693 T SteamAPI_ISteamFriends_GetPlayerNickname
-00013a1c T SteamAPI_ISteamFriends_GetSmallFriendAvatar
-00013ba3 T SteamAPI_ISteamFriends_GetUserRestrictions
-0001374e T SteamAPI_ISteamFriends_HasFriend
-00013cad T SteamAPI_ISteamFriends_InviteUserToGame
-00013ec3 T SteamAPI_ISteamFriends_IsClanChatAdmin
-00013efd T SteamAPI_ISteamFriends_IsClanChatWindowOpenInSteam
-00014040 T SteamAPI_ISteamFriends_IsFollowing
-000138d9 T SteamAPI_ISteamFriends_IsUserInSource
-00013d7c T SteamAPI_ISteamFriends_JoinClanChatRoom
-00013da6 T SteamAPI_ISteamFriends_LeaveClanChatRoom
-00013f27 T SteamAPI_ISteamFriends_OpenClanChatWindowInSteam
-00013f9a T SteamAPI_ISteamFriends_ReplyToFriendMessage
-00013acd T SteamAPI_ISteamFriends_RequestClanOfficerList
-00013c83 T SteamAPI_ISteamFriends_RequestFriendRichPresence
-00013a9a T SteamAPI_ISteamFriends_RequestUserInformation
-00013e3f T SteamAPI_ISteamFriends_SendClanChatMessage
-00013910 T SteamAPI_ISteamFriends_SetInGameVoiceSpeaking
-00013f7b T SteamAPI_ISteamFriends_SetListenForFriendsMessages
-00013518 T SteamAPI_ISteamFriends_SetPersonaName
-000139c8 T SteamAPI_ISteamFriends_SetPlayedWith
-00013bb9 T SteamAPI_ISteamFriends_SetRichPresence
-00018923 T SteamAPI_ISteamGameServer_AssociateWithClan
-0001873c T SteamAPI_ISteamGameServer_BeginAuthSession
-000184b5 T SteamAPI_ISteamGameServer_BLoggedOn
-000184c8 T SteamAPI_ISteamGameServer_BSecure
-000186da T SteamAPI_ISteamGameServer_BUpdateUserData
-0001879a T SteamAPI_ISteamGameServer_CancelAuthTicket
-000185d3 T SteamAPI_ISteamGameServer_ClearAllKeyValues
-0001894d T SteamAPI_ISteamGameServer_ComputeNewPlayerCompatibility
-0001868d T SteamAPI_ISteamGameServer_CreateUnauthenticatedUserConnection
-000188d0 T SteamAPI_ISteamGameServer_EnableHeartbeats
-00018773 T SteamAPI_ISteamGameServer_EndAuthSession
-0001890d T SteamAPI_ISteamGameServer_ForceHeartbeat
-00018711 T SteamAPI_ISteamGameServer_GetAuthSessionTicket
-00018821 T SteamAPI_ISteamGameServer_GetGameplayStats
-0001889a T SteamAPI_ISteamGameServer_GetNextOutgoingPacket
-0001884d T SteamAPI_ISteamGameServer_GetPublicIP
-00018837 T SteamAPI_ISteamGameServer_GetServerReputation
-000184db T SteamAPI_ISteamGameServer_GetSteamID
-00018863 T SteamAPI_ISteamGameServer_HandleIncomingPacket
-000183bf T SteamAPI_ISteamGameServer_InitGameServer
-000184a2 T SteamAPI_ISteamGameServer_LogOff
-00018474 T SteamAPI_ISteamGameServer_LogOn
-0001848f T SteamAPI_ISteamGameServer_LogOnAnonymous
-000187e7 T SteamAPI_ISteamGameServer_RequestUserGroupStatus
-0001865a T SteamAPI_ISteamGameServer_SendUserConnectAndAuthenticate
-000186b3 T SteamAPI_ISteamGameServer_SendUserDisconnect
-0001852f T SteamAPI_ISteamGameServer_SetBotPlayerCount
-00018458 T SteamAPI_ISteamGameServer_SetDedicatedServer
-00018624 T SteamAPI_ISteamGameServer_SetGameData
-00018422 T SteamAPI_ISteamGameServer_SetGameDescription
-00018609 T SteamAPI_ISteamGameServer_SetGameTags
-000188ef T SteamAPI_ISteamGameServer_SetHeartbeatInterval
-000185e6 T SteamAPI_ISteamGameServer_SetKeyValue
-00018565 T SteamAPI_ISteamGameServer_SetMapName
-00018514 T SteamAPI_ISteamGameServer_SetMaxPlayerCount
-0001843d T SteamAPI_ISteamGameServer_SetModDir
-00018580 T SteamAPI_ISteamGameServer_SetPasswordProtected
-00018407 T SteamAPI_ISteamGameServer_SetProduct
-0001863f T SteamAPI_ISteamGameServer_SetRegion
-0001854a T SteamAPI_ISteamGameServer_SetServerName
-0001859c T SteamAPI_ISteamGameServer_SetSpectatorPort
-000185b8 T SteamAPI_ISteamGameServer_SetSpectatorServerName
-00018b1e T SteamAPI_ISteamGameServerStats_ClearUserAchievement
-00018a0b T SteamAPI_ISteamGameServerStats_GetUserAchievement
-0001899d T SteamAPI_ISteamGameServerStats_GetUserStat
-000189d4 T SteamAPI_ISteamGameServerStats_GetUserStat0
-00018977 T SteamAPI_ISteamGameServerStats_RequestUserStats
-00018aef T SteamAPI_ISteamGameServerStats_SetUserAchievement
-00018a42 T SteamAPI_ISteamGameServerStats_SetUserStat
-00018a79 T SteamAPI_ISteamGameServerStats_SetUserStat0
-00018b4d T SteamAPI_ISteamGameServerStats_StoreUserStats
-00018ab0 T SteamAPI_ISteamGameServerStats_UpdateUserAvgRateStat
-000187b5 T SteamAPI_ISteamGameServer_UserHasLicenseForApp
-00018501 T SteamAPI_ISteamGameServer_WasRestartRequested
-00017bfe T SteamAPI_ISteamHTMLSurface_AddHeader
-00017f64 T SteamAPI_ISteamHTMLSurface_AllowStartRequest
-00017e09 T SteamAPI_ISteamHTMLSurface_CopyToClipboard
-00017afe T SteamAPI_ISteamHTMLSurface_CreateBrowser
-00017ac1 T SteamAPI_ISteamHTMLSurface_DestructISteamHTMLSurface
-00017c29 T SteamAPI_ISteamHTMLSurface_ExecuteJavascript
-00017fb2 T SteamAPI_ISteamHTMLSurface_FileLoadDialogResponse
-00017e3f T SteamAPI_ISteamHTMLSurface_Find
-00017e8f T SteamAPI_ISteamHTMLSurface_GetLinkAtPosition
-00017bc8 T SteamAPI_ISteamHTMLSurface_GoBack
-00017be3 T SteamAPI_ISteamHTMLSurface_GoForward
-00017ad8 T SteamAPI_ISteamHTMLSurface_Init
-00017f8b T SteamAPI_ISteamHTMLSurface_JSDialogResponse
-00017d59 T SteamAPI_ISteamHTMLSurface_KeyChar
-00017d03 T SteamAPI_ISteamHTMLSurface_KeyDown
-00017d2e T SteamAPI_ISteamHTMLSurface_KeyUp
-00017b3c T SteamAPI_ISteamHTMLSurface_LoadURL
-00017c92 T SteamAPI_ISteamHTMLSurface_MouseDoubleClick
-00017c6f T SteamAPI_ISteamHTMLSurface_MouseDown
-00017cb5 T SteamAPI_ISteamHTMLSurface_MouseMove
-00017c4c T SteamAPI_ISteamHTMLSurface_MouseUp
-00017ce0 T SteamAPI_ISteamHTMLSurface_MouseWheel
-00017e24 T SteamAPI_ISteamHTMLSurface_PasteFromClipboard
-00017bad T SteamAPI_ISteamHTMLSurface_Reload
-00017b21 T SteamAPI_ISteamHTMLSurface_RemoveBrowser
-00017f3d T SteamAPI_ISteamHTMLSurface_SetBackgroundMode
-00017eba T SteamAPI_ISteamHTMLSurface_SetCookie
-00017d84 T SteamAPI_ISteamHTMLSurface_SetHorizontalScroll
-00017dca T SteamAPI_ISteamHTMLSurface_SetKeyFocus
-00017f07 T SteamAPI_ISteamHTMLSurface_SetPageScaleFactor
-00017b67 T SteamAPI_ISteamHTMLSurface_SetSize
-00017da7 T SteamAPI_ISteamHTMLSurface_SetVerticalScroll
-00017aeb T SteamAPI_ISteamHTMLSurface_Shutdown
-00017e74 T SteamAPI_ISteamHTMLSurface_StopFind
-00017b92 T SteamAPI_ISteamHTMLSurface_StopLoad
-00017dee T SteamAPI_ISteamHTMLSurface_ViewSource
-00016c12 T SteamAPI_ISteamHTTP_CreateCookieContainer
-0001697c T SteamAPI_ISteamHTTP_CreateHTTPRequest
-00016a8c T SteamAPI_ISteamHTTP_DeferHTTPRequest
-00016bbc T SteamAPI_ISteamHTTP_GetHTTPDownloadProgressPct
-00016d09 T SteamAPI_ISteamHTTP_GetHTTPRequestWasTimedOut
-00016b43 T SteamAPI_ISteamHTTP_GetHTTPResponseBodyData
-00016b20 T SteamAPI_ISteamHTTP_GetHTTPResponseBodySize
-00016ac2 T SteamAPI_ISteamHTTP_GetHTTPResponseHeaderSize
-00016aed T SteamAPI_ISteamHTTP_GetHTTPResponseHeaderValue
-00016b6e T SteamAPI_ISteamHTTP_GetHTTPStreamingResponseBodyData
-00016aa7 T SteamAPI_ISteamHTTP_PrioritizeHTTPRequest
-00016c2e T SteamAPI_ISteamHTTP_ReleaseCookieContainer
-00016ba1 T SteamAPI_ISteamHTTP_ReleaseHTTPRequest
-00016a46 T SteamAPI_ISteamHTTP_SendHTTPRequest
-00016a69 T SteamAPI_ISteamHTTP_SendHTTPRequestAndStreamResponse
-00016c49 T SteamAPI_ISteamHTTP_SetCookie
-00016ce6 T SteamAPI_ISteamHTTP_SetHTTPRequestAbsoluteTimeoutMS
-0001699e T SteamAPI_ISteamHTTP_SetHTTPRequestContextValue
-00016c7c T SteamAPI_ISteamHTTP_SetHTTPRequestCookieContainer
-00016a1b T SteamAPI_ISteamHTTP_SetHTTPRequestGetOrPostParameter
-000169f0 T SteamAPI_ISteamHTTP_SetHTTPRequestHeaderValue
-000169cd T SteamAPI_ISteamHTTP_SetHTTPRequestNetworkActivityTimeout
-00016bdf T SteamAPI_ISteamHTTP_SetHTTPRequestRawPostBody
-00016cc2 T SteamAPI_ISteamHTTP_SetHTTPRequestRequiresVerifiedCertificate
-00016c9f T SteamAPI_ISteamHTTP_SetHTTPRequestUserAgentInfo
-00018175 T SteamAPI_ISteamInventory_AddPromoItem
-00018198 T SteamAPI_ISteamInventory_AddPromoItems
-00018038 T SteamAPI_ISteamInventory_CheckResultSteamID
-000181c3 T SteamAPI_ISteamInventory_ConsumeItem
-000180f3 T SteamAPI_ISteamInventory_DeserializeResult
-00018067 T SteamAPI_ISteamInventory_DestroyResult
-000181fa T SteamAPI_ISteamInventory_ExchangeItems
-00018127 T SteamAPI_ISteamInventory_GenerateItems
-00018082 T SteamAPI_ISteamInventory_GetAllItems
-00018334 T SteamAPI_ISteamInventory_GetItemDefinitionIDs
-00018357 T SteamAPI_ISteamInventory_GetItemDefinitionProperty
-0001809d T SteamAPI_ISteamInventory_GetItemsByID
-00017ff2 T SteamAPI_ISteamInventory_GetResultItems
-00017fd8 T SteamAPI_ISteamInventory_GetResultStatus
-0001801d T SteamAPI_ISteamInventory_GetResultTimestamp
-0001815a T SteamAPI_ISteamInventory_GrantPromoItems
-00018321 T SteamAPI_ISteamInventory_LoadItemDefinitions
-0001828c T SteamAPI_ISteamInventory_SendItemDropHeartbeat
-000180c8 T SteamAPI_ISteamInventory_SerializeResult
-000182c2 T SteamAPI_ISteamInventory_TradeItems
-00018245 T SteamAPI_ISteamInventory_TransferItemQuantity
-0001829f T SteamAPI_ISteamInventory_TriggerItemDrop
-000143d6 T SteamAPI_ISteamMatchmaking_AddFavoriteGame
-0001453d T SteamAPI_ISteamMatchmaking_AddRequestLobbyListCompatibleMembersFilter
-00014507 T SteamAPI_ISteamMatchmaking_AddRequestLobbyListDistanceFilter
-000144ec T SteamAPI_ISteamMatchmaking_AddRequestLobbyListFilterSlotsAvailable
-000144c9 T SteamAPI_ISteamMatchmaking_AddRequestLobbyListNearValueFilter
-0001449e T SteamAPI_ISteamMatchmaking_AddRequestLobbyListNumericalFilter
-00014522 T SteamAPI_ISteamMatchmaking_AddRequestLobbyListResultCountFilter
-00014473 T SteamAPI_ISteamMatchmaking_AddRequestLobbyListStringFilter
-00014594 T SteamAPI_ISteamMatchmaking_CreateLobby
-00014781 T SteamAPI_ISteamMatchmaking_DeleteLobbyData
-0001438b T SteamAPI_ISteamMatchmaking_GetFavoriteGame
-00014379 T SteamAPI_ISteamMatchmaking_GetFavoriteGameCount
-00014564 T SteamAPI_ISteamMatchmaking_GetLobbyByIndex
-0001485d T SteamAPI_ISteamMatchmaking_GetLobbyChatEntry
-000146a5 T SteamAPI_ISteamMatchmaking_GetLobbyData
-00014732 T SteamAPI_ISteamMatchmaking_GetLobbyDataByIndex
-0001470b T SteamAPI_ISteamMatchmaking_GetLobbyDataCount
-0001491b T SteamAPI_ISteamMatchmaking_GetLobbyGameServer
-00014663 T SteamAPI_ISteamMatchmaking_GetLobbyMemberByIndex
-000147b0 T SteamAPI_ISteamMatchmaking_GetLobbyMemberData
-00014989 T SteamAPI_ISteamMatchmaking_GetLobbyMemberLimit
-00014a18 T SteamAPI_ISteamMatchmaking_GetLobbyOwner
-0001463c T SteamAPI_ISteamMatchmaking_GetNumLobbyMembers
-00014605 T SteamAPI_ISteamMatchmaking_InviteUserToLobby
-000145b7 T SteamAPI_ISteamMatchmaking_JoinLobby
-000145de T SteamAPI_ISteamMatchmaking_LeaveLobby
-00014b4b T SteamAPI_ISteamMatchmakingPingResponse_ServerFailedToRespond
-00014b31 T SteamAPI_ISteamMatchmakingPingResponse_ServerResponded
-00014b5e T SteamAPI_ISteamMatchmakingPlayersResponse_AddPlayerToList
-00014b88 T SteamAPI_ISteamMatchmakingPlayersResponse_PlayersFailedToRespond
-00014b9b T SteamAPI_ISteamMatchmakingPlayersResponse_PlayersRefreshComplete
-0001441f T SteamAPI_ISteamMatchmaking_RemoveFavoriteGame
-000148ac T SteamAPI_ISteamMatchmaking_RequestLobbyData
-00014460 T SteamAPI_ISteamMatchmaking_RequestLobbyList
-00014bd0 T SteamAPI_ISteamMatchmakingRulesResponse_RulesFailedToRespond
-00014be3 T SteamAPI_ISteamMatchmakingRulesResponse_RulesRefreshComplete
-00014bae T SteamAPI_ISteamMatchmakingRulesResponse_RulesResponded
-00014826 T SteamAPI_ISteamMatchmaking_SendLobbyChatMsg
-00014b0e T SteamAPI_ISteamMatchmakingServerListResponse_RefreshComplete
-00014aeb T SteamAPI_ISteamMatchmakingServerListResponse_ServerFailedToRespond
-00014ac9 T SteamAPI_ISteamMatchmakingServerListResponse_ServerResponded
-00014d55 T SteamAPI_ISteamMatchmakingServers_CancelQuery
-00014e6e T SteamAPI_ISteamMatchmakingServers_CancelServerQuery
-00014da6 T SteamAPI_ISteamMatchmakingServers_GetServerCount
-00014d32 T SteamAPI_ISteamMatchmakingServers_GetServerDetails
-00014d8b T SteamAPI_ISteamMatchmakingServers_IsRefreshing
-00014de4 T SteamAPI_ISteamMatchmakingServers_PingServer
-00014e12 T SteamAPI_ISteamMatchmakingServers_PlayerDetails
-00014d70 T SteamAPI_ISteamMatchmakingServers_RefreshQuery
-00014dc1 T SteamAPI_ISteamMatchmakingServers_RefreshServer
-00014d17 T SteamAPI_ISteamMatchmakingServers_ReleaseRequest
-00014c7e T SteamAPI_ISteamMatchmakingServers_RequestFavoritesServerList
-00014c4b T SteamAPI_ISteamMatchmakingServers_RequestFriendsServerList
-00014cb1 T SteamAPI_ISteamMatchmakingServers_RequestHistoryServerList
-00014bf6 T SteamAPI_ISteamMatchmakingServers_RequestInternetServerList
-00014c28 T SteamAPI_ISteamMatchmakingServers_RequestLANServerList
-00014ce4 T SteamAPI_ISteamMatchmakingServers_RequestSpectatorServerList
-00014e40 T SteamAPI_ISteamMatchmakingServers_ServerRules
-00014a8f T SteamAPI_ISteamMatchmaking_SetLinkedLobby
-000146d4 T SteamAPI_ISteamMatchmaking_SetLobbyData
-000148d3 T SteamAPI_ISteamMatchmaking_SetLobbyGameServer
-000149e5 T SteamAPI_ISteamMatchmaking_SetLobbyJoinable
-000147ef T SteamAPI_ISteamMatchmaking_SetLobbyMemberData
-0001495a T SteamAPI_ISteamMatchmaking_SetLobbyMemberLimit
-00014a55 T SteamAPI_ISteamMatchmaking_SetLobbyOwner
-000149b3 T SteamAPI_ISteamMatchmaking_SetLobbyType
-00016581 T SteamAPI_ISteamMusic_BIsEnabled
-00016593 T SteamAPI_ISteamMusic_BIsPlaying
-000165a6 T SteamAPI_ISteamMusic_GetPlaybackStatus
-00016620 T SteamAPI_ISteamMusic_GetVolume
-000165cc T SteamAPI_ISteamMusic_Pause
-000165b9 T SteamAPI_ISteamMusic_Play
-000165f2 T SteamAPI_ISteamMusic_PlayNext
-000165df T SteamAPI_ISteamMusic_PlayPrevious
-00016673 T SteamAPI_ISteamMusicRemote_BActivationSuccess
-00016660 T SteamAPI_ISteamMusicRemote_BIsCurrentMusicRemote
-0001686b T SteamAPI_ISteamMusicRemote_CurrentEntryDidChange
-000167f6 T SteamAPI_ISteamMusicRemote_CurrentEntryIsAvailable
-000167e3 T SteamAPI_ISteamMusicRemote_CurrentEntryWillChange
-0001664d T SteamAPI_ISteamMusicRemote_DeregisterSteamMusicRemote
-00016721 T SteamAPI_ISteamMusicRemote_EnableLooped
-00016759 T SteamAPI_ISteamMusicRemote_EnablePlaylists
-000166e9 T SteamAPI_ISteamMusicRemote_EnablePlayNext
-000166cd T SteamAPI_ISteamMusicRemote_EnablePlayPrevious
-0001673d T SteamAPI_ISteamMusicRemote_EnableQueue
-00016705 T SteamAPI_ISteamMusicRemote_EnableShuffled
-00016969 T SteamAPI_ISteamMusicRemote_PlaylistDidChange
-000168fd T SteamAPI_ISteamMusicRemote_PlaylistWillChange
-000168ea T SteamAPI_ISteamMusicRemote_QueueDidChange
-0001687e T SteamAPI_ISteamMusicRemote_QueueWillChange
-00016633 T SteamAPI_ISteamMusicRemote_RegisterSteamMusicRemote
-00016910 T SteamAPI_ISteamMusicRemote_ResetPlaylistEntries
-00016891 T SteamAPI_ISteamMusicRemote_ResetQueueEntries
-0001694e T SteamAPI_ISteamMusicRemote_SetCurrentPlaylistEntry
-000168cf T SteamAPI_ISteamMusicRemote_SetCurrentQueueEntry
-0001668f T SteamAPI_ISteamMusicRemote_SetDisplayName
-00016923 T SteamAPI_ISteamMusicRemote_SetPlaylistEntry
-000166aa T SteamAPI_ISteamMusicRemote_SetPNGIcon_64x64
-000168a4 T SteamAPI_ISteamMusicRemote_SetQueueEntry
-00016848 T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryCoverArt
-0001682d T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryElapsedSeconds
-00016812 T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryText
-000167ac T SteamAPI_ISteamMusicRemote_UpdateLooped
-00016775 T SteamAPI_ISteamMusicRemote_UpdatePlaybackStatus
-00016790 T SteamAPI_ISteamMusicRemote_UpdateShuffled
-000167c8 T SteamAPI_ISteamMusicRemote_UpdateVolume
-00016605 T SteamAPI_ISteamMusic_SetVolume
-0001612b T SteamAPI_ISteamNetworking_AcceptP2PSessionWithUser
-000161d7 T SteamAPI_ISteamNetworking_AllowP2PPacketRelay
-00016179 T SteamAPI_ISteamNetworking_CloseP2PChannelWithUser
-00016152 T SteamAPI_ISteamNetworking_CloseP2PSessionWithUser
-0001626a T SteamAPI_ISteamNetworking_CreateConnectionSocket
-000161f3 T SteamAPI_ISteamNetworking_CreateListenSocket
-0001622a T SteamAPI_ISteamNetworking_CreateP2PConnectionSocket
-000162bc T SteamAPI_ISteamNetworking_DestroyListenSocket
-00016298 T SteamAPI_ISteamNetworking_DestroySocket
-0001640b T SteamAPI_ISteamNetworking_GetListenSocketInfo
-00016451 T SteamAPI_ISteamNetworking_GetMaxPacketSize
-000161a8 T SteamAPI_ISteamNetworking_GetP2PSessionState
-00016436 T SteamAPI_ISteamNetworking_GetSocketConnectionType
-000163d0 T SteamAPI_ISteamNetworking_GetSocketInfo
-0001636a T SteamAPI_ISteamNetworking_IsDataAvailable
-00016314 T SteamAPI_ISteamNetworking_IsDataAvailableOnSocket
-000160cd T SteamAPI_ISteamNetworking_IsP2PPacketAvailable
-000160f0 T SteamAPI_ISteamNetworking_ReadP2PPacket
-00016395 T SteamAPI_ISteamNetworking_RetrieveData
-00016337 T SteamAPI_ISteamNetworking_RetrieveDataFromSocket
-000162e0 T SteamAPI_ISteamNetworking_SendDataOnSocket
-00016087 T SteamAPI_ISteamNetworking_SendP2PPacket
-000153d3 T SteamAPI_ISteamRemoteStorage_CommitPublishedFileUpdate
-00015289 T SteamAPI_ISteamRemoteStorage_CreatePublishedFileUpdateRequest
-0001542f T SteamAPI_ISteamRemoteStorage_DeletePublishedFile
-00015674 T SteamAPI_ISteamRemoteStorage_EnumeratePublishedFilesByUserAction
-0001569a T SteamAPI_ISteamRemoteStorage_EnumeratePublishedWorkshopFiles
-00015459 T SteamAPI_ISteamRemoteStorage_EnumerateUserPublishedFiles
-000155a2 T SteamAPI_ISteamRemoteStorage_EnumerateUserSharedWorkshopFiles
-000154a1 T SteamAPI_ISteamRemoteStorage_EnumerateUserSubscribedFiles
-00014ef9 T SteamAPI_ISteamRemoteStorage_FileDelete
-00014ff2 T SteamAPI_ISteamRemoteStorage_FileExists
-00014ede T SteamAPI_ISteamRemoteStorage_FileForget
-0001500d T SteamAPI_ISteamRemoteStorage_FilePersisted
-00014eb3 T SteamAPI_ISteamRemoteStorage_FileRead
-00014f14 T SteamAPI_ISteamRemoteStorage_FileShare
-00014e89 T SteamAPI_ISteamRemoteStorage_FileWrite
-00014fcb T SteamAPI_ISteamRemoteStorage_FileWriteStreamCancel
-00014fa4 T SteamAPI_ISteamRemoteStorage_FileWriteStreamClose
-00014f52 T SteamAPI_ISteamRemoteStorage_FileWriteStreamOpen
-00014f6d T SteamAPI_ISteamRemoteStorage_FileWriteStreamWriteChunk
-00015208 T SteamAPI_ISteamRemoteStorage_GetCachedUGCCount
-0001521b T SteamAPI_ISteamRemoteStorage_GetCachedUGCHandle
-00015079 T SteamAPI_ISteamRemoteStorage_GetFileCount
-0001508c T SteamAPI_ISteamRemoteStorage_GetFileNameAndSize
-00015028 T SteamAPI_ISteamRemoteStorage_GetFileSize
-00015043 T SteamAPI_ISteamRemoteStorage_GetFileTimestamp
-000153fd T SteamAPI_ISteamRemoteStorage_GetPublishedFileDetails
-0001551b T SteamAPI_ISteamRemoteStorage_GetPublishedItemVoteDetails
-000150af T SteamAPI_ISteamRemoteStorage_GetQuota
-0001505e T SteamAPI_ISteamRemoteStorage_GetSyncPlatforms
-0001517a T SteamAPI_ISteamRemoteStorage_GetUGCDetails
-00015143 T SteamAPI_ISteamRemoteStorage_GetUGCDownloadProgress
-00015578 T SteamAPI_ISteamRemoteStorage_GetUserPublishedItemVoteDetails
-000150d2 T SteamAPI_ISteamRemoteStorage_IsCloudEnabledForAccount
-000150e5 T SteamAPI_ISteamRemoteStorage_IsCloudEnabledForApp
-000155e4 T SteamAPI_ISteamRemoteStorage_PublishVideo
-00015236 T SteamAPI_ISteamRemoteStorage_PublishWorkshopFile
-000150f8 T SteamAPI_ISteamRemoteStorage_SetCloudEnabledForApp
-00014f2f T SteamAPI_ISteamRemoteStorage_SetSyncPlatforms
-00015642 T SteamAPI_ISteamRemoteStorage_SetUserPublishedFileAction
-00015477 T SteamAPI_ISteamRemoteStorage_SubscribePublishedFile
-00015114 T SteamAPI_ISteamRemoteStorage_UGCDownload
-000156e0 T SteamAPI_ISteamRemoteStorage_UGCDownloadToLocation
-000151c1 T SteamAPI_ISteamRemoteStorage_UGCRead
-000154bf T SteamAPI_ISteamRemoteStorage_UnsubscribePublishedFile
-0001533d T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileDescription
-000152b0 T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileFile
-000152df T SteamAPI_ISteamRemoteStorage_UpdatePublishedFilePreviewFile
-000154e9 T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileSetChangeDescription
-000153a1 T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileTags
-0001530e T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileTitle
-0001536f T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileVisibility
-00015545 T SteamAPI_ISteamRemoteStorage_UpdateUserPublishedItemVote
-0001649e T SteamAPI_ISteamScreenshots_AddScreenshotToLibrary
-000164e4 T SteamAPI_ISteamScreenshots_HookScreenshots
-00016500 T SteamAPI_ISteamScreenshots_SetLocation
-00016552 T SteamAPI_ISteamScreenshots_TagPublishedFile
-00016523 T SteamAPI_ISteamScreenshots_TagUser
-000164d1 T SteamAPI_ISteamScreenshots_TriggerScreenshot
-0001646c T SteamAPI_ISteamScreenshots_WriteScreenshot
-00017239 T SteamAPI_ISteamUGC_AddExcludedTag
-0001771d T SteamAPI_ISteamUGC_AddItemKeyValueTag
-00017820 T SteamAPI_ISteamUGC_AddItemToFavorites
-000174a3 T SteamAPI_ISteamUGC_AddRequiredKeyValueTag
-0001720a T SteamAPI_ISteamUGC_AddRequiredTag
-000179f5 T SteamAPI_ISteamUGC_BInitWorkshopForGameServer
-00017509 T SteamAPI_ISteamUGC_CreateItem
-00016f27 T SteamAPI_ISteamUGC_CreateQueryAllUGCRequest
-00016f62 T SteamAPI_ISteamUGC_CreateQueryUGCDetailsRequest
-00016edd T SteamAPI_ISteamUGC_CreateQueryUserUGCRequest
-000179c2 T SteamAPI_ISteamUGC_DownloadItem
-00017988 T SteamAPI_ISteamUGC_GetItemDownloadInfo
-0001793e T SteamAPI_ISteamUGC_GetItemInstallInfo
-00017914 T SteamAPI_ISteamUGC_GetItemState
-00017789 T SteamAPI_ISteamUGC_GetItemUpdateProgress
-000178d8 T SteamAPI_ISteamUGC_GetNumSubscribedItems
-0001710e T SteamAPI_ISteamUGC_GetQueryUGCAdditionalPreview
-00017061 T SteamAPI_ISteamUGC_GetQueryUGCChildren
-0001718c T SteamAPI_ISteamUGC_GetQueryUGCKeyValueTag
-00017022 T SteamAPI_ISteamUGC_GetQueryUGCMetadata
-000170df T SteamAPI_ISteamUGC_GetQueryUGCNumAdditionalPreviews
-0001715d T SteamAPI_ISteamUGC_GetQueryUGCNumKeyValueTags
-00016fe3 T SteamAPI_ISteamUGC_GetQueryUGCPreviewURL
-00016fac T SteamAPI_ISteamUGC_GetQueryUGCResult
-000170a0 T SteamAPI_ISteamUGC_GetQueryUGCStatistic
-000178ee T SteamAPI_ISteamUGC_GetSubscribedItems
-000177f6 T SteamAPI_ISteamUGC_GetUserItemVote
-000171e3 T SteamAPI_ISteamUGC_ReleaseQueryUGCRequest
-00017852 T SteamAPI_ISteamUGC_RemoveItemFromFavorites
-000176eb T SteamAPI_ISteamUGC_RemoveItemKeyValueTags
-000174da T SteamAPI_ISteamUGC_RequestUGCDetails
-00016f85 T SteamAPI_ISteamUGC_SendQueryUGCRequest
-000173b7 T SteamAPI_ISteamUGC_SetAllowCachedResponse
-000173e6 T SteamAPI_ISteamUGC_SetCloudFileNameFilter
-00017687 T SteamAPI_ISteamUGC_SetItemContent
-0001758d T SteamAPI_ISteamUGC_SetItemDescription
-000175f1 T SteamAPI_ISteamUGC_SetItemMetadata
-000176b9 T SteamAPI_ISteamUGC_SetItemPreview
-00017655 T SteamAPI_ISteamUGC_SetItemTags
-0001755b T SteamAPI_ISteamUGC_SetItemTitle
-000175bf T SteamAPI_ISteamUGC_SetItemUpdateLanguage
-00017623 T SteamAPI_ISteamUGC_SetItemVisibility
-00017388 T SteamAPI_ISteamUGC_SetLanguage
-00017415 T SteamAPI_ISteamUGC_SetMatchAnyTag
-00017474 T SteamAPI_ISteamUGC_SetRankedByTrendDays
-00017328 T SteamAPI_ISteamUGC_SetReturnAdditionalPreviews
-000172f8 T SteamAPI_ISteamUGC_SetReturnChildren
-00017268 T SteamAPI_ISteamUGC_SetReturnKeyValueTags
-00017298 T SteamAPI_ISteamUGC_SetReturnLongDescription
-000172c8 T SteamAPI_ISteamUGC_SetReturnMetadata
-00017358 T SteamAPI_ISteamUGC_SetReturnTotalOnly
-00017445 T SteamAPI_ISteamUGC_SetSearchText
-000177c3 T SteamAPI_ISteamUGC_SetUserItemVote
-0001752c T SteamAPI_ISteamUGC_StartItemUpdate
-00017757 T SteamAPI_ISteamUGC_SubmitItemUpdate
-00017884 T SteamAPI_ISteamUGC_SubscribeItem
-000178ae T SteamAPI_ISteamUGC_UnsubscribeItem
-00016da1 T SteamAPI_ISteamUnifiedMessages_GetMethodResponseData
-00016d6a T SteamAPI_ISteamUnifiedMessages_GetMethodResponseInfo
-00016de1 T SteamAPI_ISteamUnifiedMessages_ReleaseMethod
-00016d2c T SteamAPI_ISteamUnifiedMessages_SendMethod
-00016e08 T SteamAPI_ISteamUnifiedMessages_SendNotification
-0001342e T SteamAPI_ISteamUser_AdvertiseGame
-00013373 T SteamAPI_ISteamUser_BeginAuthSession
-0001341b T SteamAPI_ISteamUser_BIsBehindNAT
-0001313c T SteamAPI_ISteamUser_BLoggedOn
-000133d1 T SteamAPI_ISteamUser_CancelAuthTicket
-000132f2 T SteamAPI_ISteamUser_DecompressVoice
-000133aa T SteamAPI_ISteamUser_EndAuthSession
-00013348 T SteamAPI_ISteamUser_GetAuthSessionTicket
-0001326a T SteamAPI_ISteamUser_GetAvailableVoice
-00013489 T SteamAPI_ISteamUser_GetEncryptedAppTicket
-000134b4 T SteamAPI_ISteamUser_GetGameBadgeLevel
-0001312a T SteamAPI_ISteamUser_GetHSteamUser
-000134d8 T SteamAPI_ISteamUser_GetPlayerSteamLevel
-0001314f T SteamAPI_ISteamUser_GetSteamID
-00013221 T SteamAPI_ISteamUser_GetUserDataFolder
-00013295 T SteamAPI_ISteamUser_GetVoice
-00013335 T SteamAPI_ISteamUser_GetVoiceOptimalSampleRate
-00013175 T SteamAPI_ISteamUser_InitiateGameConnection
-00013466 T SteamAPI_ISteamUser_RequestEncryptedAppTicket
-000134eb T SteamAPI_ISteamUser_RequestStoreAuthURL
-00013244 T SteamAPI_ISteamUser_StartVoiceRecording
-00015c1e T SteamAPI_ISteamUserStats_AttachLeaderboardUGC
-00015821 T SteamAPI_ISteamUserStats_ClearAchievement
-00015b1a T SteamAPI_ISteamUserStats_DownloadLeaderboardEntries
-00015b59 T SteamAPI_ISteamUserStats_DownloadLeaderboardEntriesForUsers
-00015a63 T SteamAPI_ISteamUserStats_FindLeaderboard
-00015a38 T SteamAPI_ISteamUserStats_FindOrCreateLeaderboard
-000157e3 T SteamAPI_ISteamUserStats_GetAchievement
-00015cf8 T SteamAPI_ISteamUserStats_GetAchievementAchievedPercent
-0001583c T SteamAPI_ISteamUserStats_GetAchievementAndUnlockTime
-00015895 T SteamAPI_ISteamUserStats_GetAchievementDisplayAttribute
-0001587a T SteamAPI_ISteamUserStats_GetAchievementIcon
-000158f6 T SteamAPI_ISteamUserStats_GetAchievementName
-00015b90 T SteamAPI_ISteamUserStats_GetDownloadedLeaderboardEntry
-00015d3c T SteamAPI_ISteamUserStats_GetGlobalStat
-00015d62 T SteamAPI_ISteamUserStats_GetGlobalStat0
-00015d88 T SteamAPI_ISteamUserStats_GetGlobalStatHistory
-00015db6 T SteamAPI_ISteamUserStats_GetGlobalStatHistory0
-00015af3 T SteamAPI_ISteamUserStats_GetLeaderboardDisplayType
-00015aa5 T SteamAPI_ISteamUserStats_GetLeaderboardEntryCount
-00015a7e T SteamAPI_ISteamUserStats_GetLeaderboardName
-00015acc T SteamAPI_ISteamUserStats_GetLeaderboardSortMethod
-00015c84 T SteamAPI_ISteamUserStats_GetMostAchievedAchievementInfo
-00015cba T SteamAPI_ISteamUserStats_GetNextMostAchievedAchievementInfo
-000158e3 T SteamAPI_ISteamUserStats_GetNumAchievements
-00015c58 T SteamAPI_ISteamUserStats_GetNumberOfCurrentPlayers
-0001572c T SteamAPI_ISteamUserStats_GetStat
-0001574f T SteamAPI_ISteamUserStats_GetStat0
-000159a6 T SteamAPI_ISteamUserStats_GetUserAchievement
-000159dd T SteamAPI_ISteamUserStats_GetUserAchievementAndUnlockTime
-00015938 T SteamAPI_ISteamUserStats_GetUserStat
-0001596f T SteamAPI_ISteamUserStats_GetUserStat0
-000158b8 T SteamAPI_ISteamUserStats_IndicateAchievementProgress
-0001571a T SteamAPI_ISteamUserStats_RequestCurrentStats
-00015c6e T SteamAPI_ISteamUserStats_RequestGlobalAchievementPercentages
-00015d1e T SteamAPI_ISteamUserStats_RequestGlobalStats
-00015911 T SteamAPI_ISteamUserStats_RequestUserStats
-00015a1c T SteamAPI_ISteamUserStats_ResetAllStats
-00015806 T SteamAPI_ISteamUserStats_SetAchievement
-00015772 T SteamAPI_ISteamUserStats_SetStat
-00015795 T SteamAPI_ISteamUserStats_SetStat0
-00015867 T SteamAPI_ISteamUserStats_StoreStats
-000157b8 T SteamAPI_ISteamUserStats_UpdateAvgRateStat
-00015bd7 T SteamAPI_ISteamUserStats_UploadLeaderboardScore
-00013257 T SteamAPI_ISteamUser_StopVoiceRecording
-000131c6 T SteamAPI_ISteamUser_TerminateGameConnection
-000131ea T SteamAPI_ISteamUser_TrackAppUsageEvent
-000133ec T SteamAPI_ISteamUser_UserHasLicenseForApp
-00014291 T SteamAPI_ISteamUtils_BOverlayNeedsPresent
-000142a4 T SteamAPI_ISteamUtils_CheckFileSignature
-000141cf T SteamAPI_ISteamUtils_GetAPICallFailureReason
-000141f6 T SteamAPI_ISteamUtils_GetAPICallResult
-00014172 T SteamAPI_ISteamUtils_GetAppID
-000140ad T SteamAPI_ISteamUtils_GetConnectedUniverse
-0001413c T SteamAPI_ISteamUtils_GetCSERIPPort
-0001415f T SteamAPI_ISteamUtils_GetCurrentBatteryPower
-0001430d T SteamAPI_ISteamUtils_GetEnteredGamepadTextInput
-000142fa T SteamAPI_ISteamUtils_GetEnteredGamepadTextLength
-00014111 T SteamAPI_ISteamUtils_GetImageRGBA
-000140e6 T SteamAPI_ISteamUtils_GetImageSize
-00014250 T SteamAPI_ISteamUtils_GetIPCCallCount
-000140d3 T SteamAPI_ISteamUtils_GetIPCountry
-00014088 T SteamAPI_ISteamUtils_GetSecondsSinceAppActive
-0001409a T SteamAPI_ISteamUtils_GetSecondsSinceComputerActive
-000140c0 T SteamAPI_ISteamUtils_GetServerRealTime
-00014330 T SteamAPI_ISteamUtils_GetSteamUILanguage
-000141a0 T SteamAPI_ISteamUtils_IsAPICallCompleted
-0001427e T SteamAPI_ISteamUtils_IsOverlayEnabled
-00014343 T SteamAPI_ISteamUtils_IsSteamRunningInVR
-0001423d T SteamAPI_ISteamUtils_RunFrame
-00014356 T SteamAPI_ISteamUtils_SetOverlayNotificationInset
-00014185 T SteamAPI_ISteamUtils_SetOverlayNotificationPosition
-00014263 T SteamAPI_ISteamUtils_SetWarningMessageHook
-000142bf T SteamAPI_ISteamUtils_ShowGamepadTextInput
-0001838a T SteamAPI_ISteamVideo_GetVideoURL
-000183a4 T SteamAPI_ISteamVideo_IsBroadcasting
-00010736 T SteamAPI_RegisterCallback
-0001077e T SteamAPI_RegisterCallResult
-00011d40 T SteamAPI_RestartAppIfNecessary
-000106a0 T SteamAPI_RunCallbacks
-00010dce T SteamAPI_SetBreakpadAppID
-00010e71 T SteamAPI_SetMiniDumpComment
-0000e91e T SteamAPI_SetTryCatchCallbacks
-00010444 T SteamAPI_Shutdown
-0001075e T SteamAPI_UnregisterCallback
-000107ae T SteamAPI_UnregisterCallResult
-000122a3 T SteamAPI_UseBreakpadCrashHandler
-00010ea9 T SteamAPI_WriteMiniDump
-00010233 T SteamAppList
-000101a3 T SteamApps
-00010125 T SteamClient
-0001020f T SteamController
-0000fd42 T SteamController_GetControllerState
-0000f94e T SteamController_Init
-0000fdbc T SteamController_SetOverrideMode
-0000fd1c T SteamController_Shutdown
-0000fd7a T SteamController_TriggerHapticPulse
-00010149 T SteamFriends
-000125bd T SteamGameServer
-000125e1 T SteamGameServerApps
-00012b42 T SteamGameServer_BSecure
-0001264d T SteamGameServer_GetHSteamPipe
-0001265f T SteamGameServer_GetHSteamUser
-00012bca T SteamGameServer_GetIPCCallCount
-00012b73 T SteamGameServer_GetSteamID
-00012617 T SteamGameServerHTTP
-000129df T SteamGameServer_Init
-00012997 T SteamGameServer_InitSafe
-00012629 T SteamGameServerInventory
-000125f3 T SteamGameServerNetworking
-00012b14 T SteamGameServer_RunCallbacks
-00012a27 T SteamGameServer_Shutdown
-00012605 T SteamGameServerStats
-0001263b T SteamGameServerUGC
-000125cf T SteamGameServerUtils
-000107fe T Steam_GetHSteamUserCurrent
-00010269 T SteamHTMLSurface
-000101eb T SteamHTTP
-0001027b T SteamInventory
-0001016d T SteamMatchmaking
-0001017f T SteamMatchmakingServers
-00010245 T SteamMusic
-00010257 T SteamMusicRemote
-000101b5 T SteamNetworking
-0000df20 T SteamRealPath
-000107de T Steam_RegisterInterfaceFuncs
-000101c7 T SteamRemoteStorage
-00010672 T Steam_RunCallbacks
-000101d9 T SteamScreenshots
-00010221 T SteamUGC
-000101fd T SteamUnifiedMessages
-00010137 T SteamUser
-00010191 T SteamUserStats
-0001015b T SteamUtils
-0001028d T SteamVideo
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strncasecmp@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U symlink@@GLIBC_2.0
-         U system@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U unlink@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-         U vsnprintf@@GLIBC_2.0
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-         U operator delete[](void*)@@GLIBCXX_3.4
-         U operator delete(void*)@@GLIBCXX_3.4
-         U operator new[](unsigned int)@@GLIBCXX_3.4
-         U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
-         U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
-         U operator new(unsigned int)@@GLIBCXX_3.4
-         U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-         U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-         U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+A __bss_start
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlmopen@@GLIBC_2.3.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U fclose@@GLIBC_2.1
+U fgets@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fputs@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fwrite@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+T GetHSteamPipe
+T GetHSteamUser
+w __gmon_start__
+B g_pSteamClientGameServer
+U __gxx_personality_v0@@CXXABI_1.3
+T _init
+w _Jv_RegisterClasses
+U kill@@GLIBC_2.0
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mount@@GLIBC_2.0
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_destroy@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U readdir64@@GLIBC_2.2
+U read@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U rename@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U scandir64@@GLIBC_2.2
+U scandir@@GLIBC_2.0
+U setenv@@GLIBC_2.0
+U snprintf@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U statvfs64@@GLIBC_2.1
+U statvfs@@GLIBC_2.1
+U stderr@@GLIBC_2.0
+T SteamAPI_GetHSteamPipe
+T SteamAPI_GetHSteamUser
+T SteamAPI_GetSteamInstallPath
+T SteamAPI_Init
+T SteamAPI_InitSafe
+T SteamAPI_IsSteamRunning
+T SteamAPI_ISteamAppList_GetAppBuildId
+T SteamAPI_ISteamAppList_GetAppInstallDir
+T SteamAPI_ISteamAppList_GetAppName
+T SteamAPI_ISteamAppList_GetInstalledApps
+T SteamAPI_ISteamAppList_GetNumInstalledApps
+T SteamAPI_ISteamApps_BGetDLCDataByIndex
+T SteamAPI_ISteamApps_BIsAppInstalled
+T SteamAPI_ISteamApps_BIsCybercafe
+T SteamAPI_ISteamApps_BIsDlcInstalled
+T SteamAPI_ISteamApps_BIsLowViolence
+T SteamAPI_ISteamApps_BIsSubscribed
+T SteamAPI_ISteamApps_BIsSubscribedApp
+T SteamAPI_ISteamApps_BIsSubscribedFromFreeWeekend
+T SteamAPI_ISteamApps_BIsVACBanned
+T SteamAPI_ISteamApps_GetAppBuildId
+T SteamAPI_ISteamApps_GetAppInstallDir
+T SteamAPI_ISteamApps_GetAppOwner
+T SteamAPI_ISteamApps_GetAvailableGameLanguages
+T SteamAPI_ISteamApps_GetCurrentBetaName
+T SteamAPI_ISteamApps_GetCurrentGameLanguage
+T SteamAPI_ISteamApps_GetDLCCount
+T SteamAPI_ISteamApps_GetDlcDownloadProgress
+T SteamAPI_ISteamApps_GetEarliestPurchaseUnixTime
+T SteamAPI_ISteamApps_GetInstalledDepots
+T SteamAPI_ISteamApps_GetLaunchQueryParam
+T SteamAPI_ISteamApps_InstallDLC
+T SteamAPI_ISteamApps_MarkContentCorrupt
+T SteamAPI_ISteamApps_RequestAppProofOfPurchaseKey
+T SteamAPI_ISteamApps_UninstallDLC
+T SteamAPI_ISteamClient_BReleaseSteamPipe
+T SteamAPI_ISteamClient_BShutdownIfAllPipesClosed
+T SteamAPI_ISteamClient_ConnectToGlobalUser
+T SteamAPI_ISteamClient_CreateLocalUser
+T SteamAPI_ISteamClient_CreateSteamPipe
+T SteamAPI_ISteamClient_GetIPCCallCount
+T SteamAPI_ISteamClient_GetISteamAppList
+T SteamAPI_ISteamClient_GetISteamApps
+T SteamAPI_ISteamClient_GetISteamController
+T SteamAPI_ISteamClient_GetISteamFriends
+T SteamAPI_ISteamClient_GetISteamGameServer
+T SteamAPI_ISteamClient_GetISteamGameServerStats
+T SteamAPI_ISteamClient_GetISteamGenericInterface
+T SteamAPI_ISteamClient_GetISteamHTMLSurface
+T SteamAPI_ISteamClient_GetISteamHTTP
+T SteamAPI_ISteamClient_GetISteamInventory
+T SteamAPI_ISteamClient_GetISteamMatchmaking
+T SteamAPI_ISteamClient_GetISteamMatchmakingServers
+T SteamAPI_ISteamClient_GetISteamMusic
+T SteamAPI_ISteamClient_GetISteamMusicRemote
+T SteamAPI_ISteamClient_GetISteamNetworking
+T SteamAPI_ISteamClient_GetISteamRemoteStorage
+T SteamAPI_ISteamClient_GetISteamScreenshots
+T SteamAPI_ISteamClient_GetISteamUGC
+T SteamAPI_ISteamClient_GetISteamUnifiedMessages
+T SteamAPI_ISteamClient_GetISteamUser
+T SteamAPI_ISteamClient_GetISteamUserStats
+T SteamAPI_ISteamClient_GetISteamUtils
+T SteamAPI_ISteamClient_GetISteamVideo
+T SteamAPI_ISteamClient_ReleaseUser
+T SteamAPI_ISteamClient_Remove_SteamAPI_CPostAPIResultInProcess
+T SteamAPI_ISteamClient_RunFrame
+T SteamAPI_ISteamClient_SetLocalIPBinding
+T SteamAPI_ISteamClient_Set_SteamAPI_CCheckCallbackRegisteredInProcess
+T SteamAPI_ISteamClient_Set_SteamAPI_CPostAPIResultInProcess
+T SteamAPI_ISteamClient_SetWarningMessageHook
+T SteamAPI_ISteamController_GetControllerState
+T SteamAPI_ISteamController_Init
+T SteamAPI_ISteamController_RunFrame
+T SteamAPI_ISteamController_SetOverrideMode
+T SteamAPI_ISteamController_Shutdown
+T SteamAPI_ISteamController_TriggerHapticPulse
+T SteamAPI_ISteamFriends_ActivateGameOverlay
+T SteamAPI_ISteamFriends_ActivateGameOverlayInviteDialog
+T SteamAPI_ISteamFriends_ActivateGameOverlayToStore
+T SteamAPI_ISteamFriends_ActivateGameOverlayToUser
+T SteamAPI_ISteamFriends_ActivateGameOverlayToWebPage
+T SteamAPI_ISteamFriends_ClearRichPresence
+T SteamAPI_ISteamFriends_CloseClanChatWindowInSteam
+T SteamAPI_ISteamFriends_DownloadClanActivityCounts
+T SteamAPI_ISteamFriends_EnumerateFollowingList
+T SteamAPI_ISteamFriends_GetChatMemberByIndex
+T SteamAPI_ISteamFriends_GetClanActivityCounts
+T SteamAPI_ISteamFriends_GetClanByIndex
+T SteamAPI_ISteamFriends_GetClanChatMemberCount
+T SteamAPI_ISteamFriends_GetClanChatMessage
+T SteamAPI_ISteamFriends_GetClanCount
+T SteamAPI_ISteamFriends_GetClanName
+T SteamAPI_ISteamFriends_GetClanOfficerByIndex
+T SteamAPI_ISteamFriends_GetClanOfficerCount
+T SteamAPI_ISteamFriends_GetClanOwner
+T SteamAPI_ISteamFriends_GetClanTag
+T SteamAPI_ISteamFriends_GetCoplayFriend
+T SteamAPI_ISteamFriends_GetCoplayFriendCount
+T SteamAPI_ISteamFriends_GetFollowerCount
+T SteamAPI_ISteamFriends_GetFriendByIndex
+T SteamAPI_ISteamFriends_GetFriendCoplayGame
+T SteamAPI_ISteamFriends_GetFriendCoplayTime
+T SteamAPI_ISteamFriends_GetFriendCount
+T SteamAPI_ISteamFriends_GetFriendCountFromSource
+T SteamAPI_ISteamFriends_GetFriendFromSourceByIndex
+T SteamAPI_ISteamFriends_GetFriendGamePlayed
+T SteamAPI_ISteamFriends_GetFriendMessage
+T SteamAPI_ISteamFriends_GetFriendPersonaName
+T SteamAPI_ISteamFriends_GetFriendPersonaNameHistory
+T SteamAPI_ISteamFriends_GetFriendPersonaState
+T SteamAPI_ISteamFriends_GetFriendRelationship
+T SteamAPI_ISteamFriends_GetFriendRichPresence
+T SteamAPI_ISteamFriends_GetFriendRichPresenceKeyByIndex
+T SteamAPI_ISteamFriends_GetFriendRichPresenceKeyCount
+T SteamAPI_ISteamFriends_GetFriendsGroupCount
+T SteamAPI_ISteamFriends_GetFriendsGroupIDByIndex
+T SteamAPI_ISteamFriends_GetFriendsGroupMembersCount
+T SteamAPI_ISteamFriends_GetFriendsGroupMembersList
+T SteamAPI_ISteamFriends_GetFriendsGroupName
+T SteamAPI_ISteamFriends_GetFriendSteamLevel
+T SteamAPI_ISteamFriends_GetLargeFriendAvatar
+T SteamAPI_ISteamFriends_GetMediumFriendAvatar
+T SteamAPI_ISteamFriends_GetPersonaName
+T SteamAPI_ISteamFriends_GetPersonaState
+T SteamAPI_ISteamFriends_GetPlayerNickname
+T SteamAPI_ISteamFriends_GetSmallFriendAvatar
+T SteamAPI_ISteamFriends_GetUserRestrictions
+T SteamAPI_ISteamFriends_HasFriend
+T SteamAPI_ISteamFriends_InviteUserToGame
+T SteamAPI_ISteamFriends_IsClanChatAdmin
+T SteamAPI_ISteamFriends_IsClanChatWindowOpenInSteam
+T SteamAPI_ISteamFriends_IsFollowing
+T SteamAPI_ISteamFriends_IsUserInSource
+T SteamAPI_ISteamFriends_JoinClanChatRoom
+T SteamAPI_ISteamFriends_LeaveClanChatRoom
+T SteamAPI_ISteamFriends_OpenClanChatWindowInSteam
+T SteamAPI_ISteamFriends_ReplyToFriendMessage
+T SteamAPI_ISteamFriends_RequestClanOfficerList
+T SteamAPI_ISteamFriends_RequestFriendRichPresence
+T SteamAPI_ISteamFriends_RequestUserInformation
+T SteamAPI_ISteamFriends_SendClanChatMessage
+T SteamAPI_ISteamFriends_SetInGameVoiceSpeaking
+T SteamAPI_ISteamFriends_SetListenForFriendsMessages
+T SteamAPI_ISteamFriends_SetPersonaName
+T SteamAPI_ISteamFriends_SetPlayedWith
+T SteamAPI_ISteamFriends_SetRichPresence
+T SteamAPI_ISteamGameServer_AssociateWithClan
+T SteamAPI_ISteamGameServer_BeginAuthSession
+T SteamAPI_ISteamGameServer_BLoggedOn
+T SteamAPI_ISteamGameServer_BSecure
+T SteamAPI_ISteamGameServer_BUpdateUserData
+T SteamAPI_ISteamGameServer_CancelAuthTicket
+T SteamAPI_ISteamGameServer_ClearAllKeyValues
+T SteamAPI_ISteamGameServer_ComputeNewPlayerCompatibility
+T SteamAPI_ISteamGameServer_CreateUnauthenticatedUserConnection
+T SteamAPI_ISteamGameServer_EnableHeartbeats
+T SteamAPI_ISteamGameServer_EndAuthSession
+T SteamAPI_ISteamGameServer_ForceHeartbeat
+T SteamAPI_ISteamGameServer_GetAuthSessionTicket
+T SteamAPI_ISteamGameServer_GetGameplayStats
+T SteamAPI_ISteamGameServer_GetNextOutgoingPacket
+T SteamAPI_ISteamGameServer_GetPublicIP
+T SteamAPI_ISteamGameServer_GetServerReputation
+T SteamAPI_ISteamGameServer_GetSteamID
+T SteamAPI_ISteamGameServer_HandleIncomingPacket
+T SteamAPI_ISteamGameServer_InitGameServer
+T SteamAPI_ISteamGameServer_LogOff
+T SteamAPI_ISteamGameServer_LogOn
+T SteamAPI_ISteamGameServer_LogOnAnonymous
+T SteamAPI_ISteamGameServer_RequestUserGroupStatus
+T SteamAPI_ISteamGameServer_SendUserConnectAndAuthenticate
+T SteamAPI_ISteamGameServer_SendUserDisconnect
+T SteamAPI_ISteamGameServer_SetBotPlayerCount
+T SteamAPI_ISteamGameServer_SetDedicatedServer
+T SteamAPI_ISteamGameServer_SetGameData
+T SteamAPI_ISteamGameServer_SetGameDescription
+T SteamAPI_ISteamGameServer_SetGameTags
+T SteamAPI_ISteamGameServer_SetHeartbeatInterval
+T SteamAPI_ISteamGameServer_SetKeyValue
+T SteamAPI_ISteamGameServer_SetMapName
+T SteamAPI_ISteamGameServer_SetMaxPlayerCount
+T SteamAPI_ISteamGameServer_SetModDir
+T SteamAPI_ISteamGameServer_SetPasswordProtected
+T SteamAPI_ISteamGameServer_SetProduct
+T SteamAPI_ISteamGameServer_SetRegion
+T SteamAPI_ISteamGameServer_SetServerName
+T SteamAPI_ISteamGameServer_SetSpectatorPort
+T SteamAPI_ISteamGameServer_SetSpectatorServerName
+T SteamAPI_ISteamGameServerStats_ClearUserAchievement
+T SteamAPI_ISteamGameServerStats_GetUserAchievement
+T SteamAPI_ISteamGameServerStats_GetUserStat
+T SteamAPI_ISteamGameServerStats_GetUserStat0
+T SteamAPI_ISteamGameServerStats_RequestUserStats
+T SteamAPI_ISteamGameServerStats_SetUserAchievement
+T SteamAPI_ISteamGameServerStats_SetUserStat
+T SteamAPI_ISteamGameServerStats_SetUserStat0
+T SteamAPI_ISteamGameServerStats_StoreUserStats
+T SteamAPI_ISteamGameServerStats_UpdateUserAvgRateStat
+T SteamAPI_ISteamGameServer_UserHasLicenseForApp
+T SteamAPI_ISteamGameServer_WasRestartRequested
+T SteamAPI_ISteamHTMLSurface_AddHeader
+T SteamAPI_ISteamHTMLSurface_AllowStartRequest
+T SteamAPI_ISteamHTMLSurface_CopyToClipboard
+T SteamAPI_ISteamHTMLSurface_CreateBrowser
+T SteamAPI_ISteamHTMLSurface_DestructISteamHTMLSurface
+T SteamAPI_ISteamHTMLSurface_ExecuteJavascript
+T SteamAPI_ISteamHTMLSurface_FileLoadDialogResponse
+T SteamAPI_ISteamHTMLSurface_Find
+T SteamAPI_ISteamHTMLSurface_GetLinkAtPosition
+T SteamAPI_ISteamHTMLSurface_GoBack
+T SteamAPI_ISteamHTMLSurface_GoForward
+T SteamAPI_ISteamHTMLSurface_Init
+T SteamAPI_ISteamHTMLSurface_JSDialogResponse
+T SteamAPI_ISteamHTMLSurface_KeyChar
+T SteamAPI_ISteamHTMLSurface_KeyDown
+T SteamAPI_ISteamHTMLSurface_KeyUp
+T SteamAPI_ISteamHTMLSurface_LoadURL
+T SteamAPI_ISteamHTMLSurface_MouseDoubleClick
+T SteamAPI_ISteamHTMLSurface_MouseDown
+T SteamAPI_ISteamHTMLSurface_MouseMove
+T SteamAPI_ISteamHTMLSurface_MouseUp
+T SteamAPI_ISteamHTMLSurface_MouseWheel
+T SteamAPI_ISteamHTMLSurface_PasteFromClipboard
+T SteamAPI_ISteamHTMLSurface_Reload
+T SteamAPI_ISteamHTMLSurface_RemoveBrowser
+T SteamAPI_ISteamHTMLSurface_SetBackgroundMode
+T SteamAPI_ISteamHTMLSurface_SetCookie
+T SteamAPI_ISteamHTMLSurface_SetHorizontalScroll
+T SteamAPI_ISteamHTMLSurface_SetKeyFocus
+T SteamAPI_ISteamHTMLSurface_SetPageScaleFactor
+T SteamAPI_ISteamHTMLSurface_SetSize
+T SteamAPI_ISteamHTMLSurface_SetVerticalScroll
+T SteamAPI_ISteamHTMLSurface_Shutdown
+T SteamAPI_ISteamHTMLSurface_StopFind
+T SteamAPI_ISteamHTMLSurface_StopLoad
+T SteamAPI_ISteamHTMLSurface_ViewSource
+T SteamAPI_ISteamHTTP_CreateCookieContainer
+T SteamAPI_ISteamHTTP_CreateHTTPRequest
+T SteamAPI_ISteamHTTP_DeferHTTPRequest
+T SteamAPI_ISteamHTTP_GetHTTPDownloadProgressPct
+T SteamAPI_ISteamHTTP_GetHTTPRequestWasTimedOut
+T SteamAPI_ISteamHTTP_GetHTTPResponseBodyData
+T SteamAPI_ISteamHTTP_GetHTTPResponseBodySize
+T SteamAPI_ISteamHTTP_GetHTTPResponseHeaderSize
+T SteamAPI_ISteamHTTP_GetHTTPResponseHeaderValue
+T SteamAPI_ISteamHTTP_GetHTTPStreamingResponseBodyData
+T SteamAPI_ISteamHTTP_PrioritizeHTTPRequest
+T SteamAPI_ISteamHTTP_ReleaseCookieContainer
+T SteamAPI_ISteamHTTP_ReleaseHTTPRequest
+T SteamAPI_ISteamHTTP_SendHTTPRequest
+T SteamAPI_ISteamHTTP_SendHTTPRequestAndStreamResponse
+T SteamAPI_ISteamHTTP_SetCookie
+T SteamAPI_ISteamHTTP_SetHTTPRequestAbsoluteTimeoutMS
+T SteamAPI_ISteamHTTP_SetHTTPRequestContextValue
+T SteamAPI_ISteamHTTP_SetHTTPRequestCookieContainer
+T SteamAPI_ISteamHTTP_SetHTTPRequestGetOrPostParameter
+T SteamAPI_ISteamHTTP_SetHTTPRequestHeaderValue
+T SteamAPI_ISteamHTTP_SetHTTPRequestNetworkActivityTimeout
+T SteamAPI_ISteamHTTP_SetHTTPRequestRawPostBody
+T SteamAPI_ISteamHTTP_SetHTTPRequestRequiresVerifiedCertificate
+T SteamAPI_ISteamHTTP_SetHTTPRequestUserAgentInfo
+T SteamAPI_ISteamInventory_AddPromoItem
+T SteamAPI_ISteamInventory_AddPromoItems
+T SteamAPI_ISteamInventory_CheckResultSteamID
+T SteamAPI_ISteamInventory_ConsumeItem
+T SteamAPI_ISteamInventory_DeserializeResult
+T SteamAPI_ISteamInventory_DestroyResult
+T SteamAPI_ISteamInventory_ExchangeItems
+T SteamAPI_ISteamInventory_GenerateItems
+T SteamAPI_ISteamInventory_GetAllItems
+T SteamAPI_ISteamInventory_GetItemDefinitionIDs
+T SteamAPI_ISteamInventory_GetItemDefinitionProperty
+T SteamAPI_ISteamInventory_GetItemsByID
+T SteamAPI_ISteamInventory_GetResultItems
+T SteamAPI_ISteamInventory_GetResultStatus
+T SteamAPI_ISteamInventory_GetResultTimestamp
+T SteamAPI_ISteamInventory_GrantPromoItems
+T SteamAPI_ISteamInventory_LoadItemDefinitions
+T SteamAPI_ISteamInventory_SendItemDropHeartbeat
+T SteamAPI_ISteamInventory_SerializeResult
+T SteamAPI_ISteamInventory_TradeItems
+T SteamAPI_ISteamInventory_TransferItemQuantity
+T SteamAPI_ISteamInventory_TriggerItemDrop
+T SteamAPI_ISteamMatchmaking_AddFavoriteGame
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListCompatibleMembersFilter
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListDistanceFilter
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListFilterSlotsAvailable
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListNearValueFilter
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListNumericalFilter
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListResultCountFilter
+T SteamAPI_ISteamMatchmaking_AddRequestLobbyListStringFilter
+T SteamAPI_ISteamMatchmaking_CreateLobby
+T SteamAPI_ISteamMatchmaking_DeleteLobbyData
+T SteamAPI_ISteamMatchmaking_GetFavoriteGame
+T SteamAPI_ISteamMatchmaking_GetFavoriteGameCount
+T SteamAPI_ISteamMatchmaking_GetLobbyByIndex
+T SteamAPI_ISteamMatchmaking_GetLobbyChatEntry
+T SteamAPI_ISteamMatchmaking_GetLobbyData
+T SteamAPI_ISteamMatchmaking_GetLobbyDataByIndex
+T SteamAPI_ISteamMatchmaking_GetLobbyDataCount
+T SteamAPI_ISteamMatchmaking_GetLobbyGameServer
+T SteamAPI_ISteamMatchmaking_GetLobbyMemberByIndex
+T SteamAPI_ISteamMatchmaking_GetLobbyMemberData
+T SteamAPI_ISteamMatchmaking_GetLobbyMemberLimit
+T SteamAPI_ISteamMatchmaking_GetLobbyOwner
+T SteamAPI_ISteamMatchmaking_GetNumLobbyMembers
+T SteamAPI_ISteamMatchmaking_InviteUserToLobby
+T SteamAPI_ISteamMatchmaking_JoinLobby
+T SteamAPI_ISteamMatchmaking_LeaveLobby
+T SteamAPI_ISteamMatchmakingPingResponse_ServerFailedToRespond
+T SteamAPI_ISteamMatchmakingPingResponse_ServerResponded
+T SteamAPI_ISteamMatchmakingPlayersResponse_AddPlayerToList
+T SteamAPI_ISteamMatchmakingPlayersResponse_PlayersFailedToRespond
+T SteamAPI_ISteamMatchmakingPlayersResponse_PlayersRefreshComplete
+T SteamAPI_ISteamMatchmaking_RemoveFavoriteGame
+T SteamAPI_ISteamMatchmaking_RequestLobbyData
+T SteamAPI_ISteamMatchmaking_RequestLobbyList
+T SteamAPI_ISteamMatchmakingRulesResponse_RulesFailedToRespond
+T SteamAPI_ISteamMatchmakingRulesResponse_RulesRefreshComplete
+T SteamAPI_ISteamMatchmakingRulesResponse_RulesResponded
+T SteamAPI_ISteamMatchmaking_SendLobbyChatMsg
+T SteamAPI_ISteamMatchmakingServerListResponse_RefreshComplete
+T SteamAPI_ISteamMatchmakingServerListResponse_ServerFailedToRespond
+T SteamAPI_ISteamMatchmakingServerListResponse_ServerResponded
+T SteamAPI_ISteamMatchmakingServers_CancelQuery
+T SteamAPI_ISteamMatchmakingServers_CancelServerQuery
+T SteamAPI_ISteamMatchmakingServers_GetServerCount
+T SteamAPI_ISteamMatchmakingServers_GetServerDetails
+T SteamAPI_ISteamMatchmakingServers_IsRefreshing
+T SteamAPI_ISteamMatchmakingServers_PingServer
+T SteamAPI_ISteamMatchmakingServers_PlayerDetails
+T SteamAPI_ISteamMatchmakingServers_RefreshQuery
+T SteamAPI_ISteamMatchmakingServers_RefreshServer
+T SteamAPI_ISteamMatchmakingServers_ReleaseRequest
+T SteamAPI_ISteamMatchmakingServers_RequestFavoritesServerList
+T SteamAPI_ISteamMatchmakingServers_RequestFriendsServerList
+T SteamAPI_ISteamMatchmakingServers_RequestHistoryServerList
+T SteamAPI_ISteamMatchmakingServers_RequestInternetServerList
+T SteamAPI_ISteamMatchmakingServers_RequestLANServerList
+T SteamAPI_ISteamMatchmakingServers_RequestSpectatorServerList
+T SteamAPI_ISteamMatchmakingServers_ServerRules
+T SteamAPI_ISteamMatchmaking_SetLinkedLobby
+T SteamAPI_ISteamMatchmaking_SetLobbyData
+T SteamAPI_ISteamMatchmaking_SetLobbyGameServer
+T SteamAPI_ISteamMatchmaking_SetLobbyJoinable
+T SteamAPI_ISteamMatchmaking_SetLobbyMemberData
+T SteamAPI_ISteamMatchmaking_SetLobbyMemberLimit
+T SteamAPI_ISteamMatchmaking_SetLobbyOwner
+T SteamAPI_ISteamMatchmaking_SetLobbyType
+T SteamAPI_ISteamMusic_BIsEnabled
+T SteamAPI_ISteamMusic_BIsPlaying
+T SteamAPI_ISteamMusic_GetPlaybackStatus
+T SteamAPI_ISteamMusic_GetVolume
+T SteamAPI_ISteamMusic_Pause
+T SteamAPI_ISteamMusic_Play
+T SteamAPI_ISteamMusic_PlayNext
+T SteamAPI_ISteamMusic_PlayPrevious
+T SteamAPI_ISteamMusicRemote_BActivationSuccess
+T SteamAPI_ISteamMusicRemote_BIsCurrentMusicRemote
+T SteamAPI_ISteamMusicRemote_CurrentEntryDidChange
+T SteamAPI_ISteamMusicRemote_CurrentEntryIsAvailable
+T SteamAPI_ISteamMusicRemote_CurrentEntryWillChange
+T SteamAPI_ISteamMusicRemote_DeregisterSteamMusicRemote
+T SteamAPI_ISteamMusicRemote_EnableLooped
+T SteamAPI_ISteamMusicRemote_EnablePlaylists
+T SteamAPI_ISteamMusicRemote_EnablePlayNext
+T SteamAPI_ISteamMusicRemote_EnablePlayPrevious
+T SteamAPI_ISteamMusicRemote_EnableQueue
+T SteamAPI_ISteamMusicRemote_EnableShuffled
+T SteamAPI_ISteamMusicRemote_PlaylistDidChange
+T SteamAPI_ISteamMusicRemote_PlaylistWillChange
+T SteamAPI_ISteamMusicRemote_QueueDidChange
+T SteamAPI_ISteamMusicRemote_QueueWillChange
+T SteamAPI_ISteamMusicRemote_RegisterSteamMusicRemote
+T SteamAPI_ISteamMusicRemote_ResetPlaylistEntries
+T SteamAPI_ISteamMusicRemote_ResetQueueEntries
+T SteamAPI_ISteamMusicRemote_SetCurrentPlaylistEntry
+T SteamAPI_ISteamMusicRemote_SetCurrentQueueEntry
+T SteamAPI_ISteamMusicRemote_SetDisplayName
+T SteamAPI_ISteamMusicRemote_SetPlaylistEntry
+T SteamAPI_ISteamMusicRemote_SetPNGIcon_64x64
+T SteamAPI_ISteamMusicRemote_SetQueueEntry
+T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryCoverArt
+T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryElapsedSeconds
+T SteamAPI_ISteamMusicRemote_UpdateCurrentEntryText
+T SteamAPI_ISteamMusicRemote_UpdateLooped
+T SteamAPI_ISteamMusicRemote_UpdatePlaybackStatus
+T SteamAPI_ISteamMusicRemote_UpdateShuffled
+T SteamAPI_ISteamMusicRemote_UpdateVolume
+T SteamAPI_ISteamMusic_SetVolume
+T SteamAPI_ISteamNetworking_AcceptP2PSessionWithUser
+T SteamAPI_ISteamNetworking_AllowP2PPacketRelay
+T SteamAPI_ISteamNetworking_CloseP2PChannelWithUser
+T SteamAPI_ISteamNetworking_CloseP2PSessionWithUser
+T SteamAPI_ISteamNetworking_CreateConnectionSocket
+T SteamAPI_ISteamNetworking_CreateListenSocket
+T SteamAPI_ISteamNetworking_CreateP2PConnectionSocket
+T SteamAPI_ISteamNetworking_DestroyListenSocket
+T SteamAPI_ISteamNetworking_DestroySocket
+T SteamAPI_ISteamNetworking_GetListenSocketInfo
+T SteamAPI_ISteamNetworking_GetMaxPacketSize
+T SteamAPI_ISteamNetworking_GetP2PSessionState
+T SteamAPI_ISteamNetworking_GetSocketConnectionType
+T SteamAPI_ISteamNetworking_GetSocketInfo
+T SteamAPI_ISteamNetworking_IsDataAvailable
+T SteamAPI_ISteamNetworking_IsDataAvailableOnSocket
+T SteamAPI_ISteamNetworking_IsP2PPacketAvailable
+T SteamAPI_ISteamNetworking_ReadP2PPacket
+T SteamAPI_ISteamNetworking_RetrieveData
+T SteamAPI_ISteamNetworking_RetrieveDataFromSocket
+T SteamAPI_ISteamNetworking_SendDataOnSocket
+T SteamAPI_ISteamNetworking_SendP2PPacket
+T SteamAPI_ISteamRemoteStorage_CommitPublishedFileUpdate
+T SteamAPI_ISteamRemoteStorage_CreatePublishedFileUpdateRequest
+T SteamAPI_ISteamRemoteStorage_DeletePublishedFile
+T SteamAPI_ISteamRemoteStorage_EnumeratePublishedFilesByUserAction
+T SteamAPI_ISteamRemoteStorage_EnumeratePublishedWorkshopFiles
+T SteamAPI_ISteamRemoteStorage_EnumerateUserPublishedFiles
+T SteamAPI_ISteamRemoteStorage_EnumerateUserSharedWorkshopFiles
+T SteamAPI_ISteamRemoteStorage_EnumerateUserSubscribedFiles
+T SteamAPI_ISteamRemoteStorage_FileDelete
+T SteamAPI_ISteamRemoteStorage_FileExists
+T SteamAPI_ISteamRemoteStorage_FileForget
+T SteamAPI_ISteamRemoteStorage_FilePersisted
+T SteamAPI_ISteamRemoteStorage_FileRead
+T SteamAPI_ISteamRemoteStorage_FileShare
+T SteamAPI_ISteamRemoteStorage_FileWrite
+T SteamAPI_ISteamRemoteStorage_FileWriteStreamCancel
+T SteamAPI_ISteamRemoteStorage_FileWriteStreamClose
+T SteamAPI_ISteamRemoteStorage_FileWriteStreamOpen
+T SteamAPI_ISteamRemoteStorage_FileWriteStreamWriteChunk
+T SteamAPI_ISteamRemoteStorage_GetCachedUGCCount
+T SteamAPI_ISteamRemoteStorage_GetCachedUGCHandle
+T SteamAPI_ISteamRemoteStorage_GetFileCount
+T SteamAPI_ISteamRemoteStorage_GetFileNameAndSize
+T SteamAPI_ISteamRemoteStorage_GetFileSize
+T SteamAPI_ISteamRemoteStorage_GetFileTimestamp
+T SteamAPI_ISteamRemoteStorage_GetPublishedFileDetails
+T SteamAPI_ISteamRemoteStorage_GetPublishedItemVoteDetails
+T SteamAPI_ISteamRemoteStorage_GetQuota
+T SteamAPI_ISteamRemoteStorage_GetSyncPlatforms
+T SteamAPI_ISteamRemoteStorage_GetUGCDetails
+T SteamAPI_ISteamRemoteStorage_GetUGCDownloadProgress
+T SteamAPI_ISteamRemoteStorage_GetUserPublishedItemVoteDetails
+T SteamAPI_ISteamRemoteStorage_IsCloudEnabledForAccount
+T SteamAPI_ISteamRemoteStorage_IsCloudEnabledForApp
+T SteamAPI_ISteamRemoteStorage_PublishVideo
+T SteamAPI_ISteamRemoteStorage_PublishWorkshopFile
+T SteamAPI_ISteamRemoteStorage_SetCloudEnabledForApp
+T SteamAPI_ISteamRemoteStorage_SetSyncPlatforms
+T SteamAPI_ISteamRemoteStorage_SetUserPublishedFileAction
+T SteamAPI_ISteamRemoteStorage_SubscribePublishedFile
+T SteamAPI_ISteamRemoteStorage_UGCDownload
+T SteamAPI_ISteamRemoteStorage_UGCDownloadToLocation
+T SteamAPI_ISteamRemoteStorage_UGCRead
+T SteamAPI_ISteamRemoteStorage_UnsubscribePublishedFile
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileDescription
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileFile
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFilePreviewFile
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileSetChangeDescription
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileTags
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileTitle
+T SteamAPI_ISteamRemoteStorage_UpdatePublishedFileVisibility
+T SteamAPI_ISteamRemoteStorage_UpdateUserPublishedItemVote
+T SteamAPI_ISteamScreenshots_AddScreenshotToLibrary
+T SteamAPI_ISteamScreenshots_HookScreenshots
+T SteamAPI_ISteamScreenshots_SetLocation
+T SteamAPI_ISteamScreenshots_TagPublishedFile
+T SteamAPI_ISteamScreenshots_TagUser
+T SteamAPI_ISteamScreenshots_TriggerScreenshot
+T SteamAPI_ISteamScreenshots_WriteScreenshot
+T SteamAPI_ISteamUGC_AddExcludedTag
+T SteamAPI_ISteamUGC_AddItemKeyValueTag
+T SteamAPI_ISteamUGC_AddItemToFavorites
+T SteamAPI_ISteamUGC_AddRequiredKeyValueTag
+T SteamAPI_ISteamUGC_AddRequiredTag
+T SteamAPI_ISteamUGC_BInitWorkshopForGameServer
+T SteamAPI_ISteamUGC_CreateItem
+T SteamAPI_ISteamUGC_CreateQueryAllUGCRequest
+T SteamAPI_ISteamUGC_CreateQueryUGCDetailsRequest
+T SteamAPI_ISteamUGC_CreateQueryUserUGCRequest
+T SteamAPI_ISteamUGC_DownloadItem
+T SteamAPI_ISteamUGC_GetItemDownloadInfo
+T SteamAPI_ISteamUGC_GetItemInstallInfo
+T SteamAPI_ISteamUGC_GetItemState
+T SteamAPI_ISteamUGC_GetItemUpdateProgress
+T SteamAPI_ISteamUGC_GetNumSubscribedItems
+T SteamAPI_ISteamUGC_GetQueryUGCAdditionalPreview
+T SteamAPI_ISteamUGC_GetQueryUGCChildren
+T SteamAPI_ISteamUGC_GetQueryUGCKeyValueTag
+T SteamAPI_ISteamUGC_GetQueryUGCMetadata
+T SteamAPI_ISteamUGC_GetQueryUGCNumAdditionalPreviews
+T SteamAPI_ISteamUGC_GetQueryUGCNumKeyValueTags
+T SteamAPI_ISteamUGC_GetQueryUGCPreviewURL
+T SteamAPI_ISteamUGC_GetQueryUGCResult
+T SteamAPI_ISteamUGC_GetQueryUGCStatistic
+T SteamAPI_ISteamUGC_GetSubscribedItems
+T SteamAPI_ISteamUGC_GetUserItemVote
+T SteamAPI_ISteamUGC_ReleaseQueryUGCRequest
+T SteamAPI_ISteamUGC_RemoveItemFromFavorites
+T SteamAPI_ISteamUGC_RemoveItemKeyValueTags
+T SteamAPI_ISteamUGC_RequestUGCDetails
+T SteamAPI_ISteamUGC_SendQueryUGCRequest
+T SteamAPI_ISteamUGC_SetAllowCachedResponse
+T SteamAPI_ISteamUGC_SetCloudFileNameFilter
+T SteamAPI_ISteamUGC_SetItemContent
+T SteamAPI_ISteamUGC_SetItemDescription
+T SteamAPI_ISteamUGC_SetItemMetadata
+T SteamAPI_ISteamUGC_SetItemPreview
+T SteamAPI_ISteamUGC_SetItemTags
+T SteamAPI_ISteamUGC_SetItemTitle
+T SteamAPI_ISteamUGC_SetItemUpdateLanguage
+T SteamAPI_ISteamUGC_SetItemVisibility
+T SteamAPI_ISteamUGC_SetLanguage
+T SteamAPI_ISteamUGC_SetMatchAnyTag
+T SteamAPI_ISteamUGC_SetRankedByTrendDays
+T SteamAPI_ISteamUGC_SetReturnAdditionalPreviews
+T SteamAPI_ISteamUGC_SetReturnChildren
+T SteamAPI_ISteamUGC_SetReturnKeyValueTags
+T SteamAPI_ISteamUGC_SetReturnLongDescription
+T SteamAPI_ISteamUGC_SetReturnMetadata
+T SteamAPI_ISteamUGC_SetReturnTotalOnly
+T SteamAPI_ISteamUGC_SetSearchText
+T SteamAPI_ISteamUGC_SetUserItemVote
+T SteamAPI_ISteamUGC_StartItemUpdate
+T SteamAPI_ISteamUGC_SubmitItemUpdate
+T SteamAPI_ISteamUGC_SubscribeItem
+T SteamAPI_ISteamUGC_UnsubscribeItem
+T SteamAPI_ISteamUnifiedMessages_GetMethodResponseData
+T SteamAPI_ISteamUnifiedMessages_GetMethodResponseInfo
+T SteamAPI_ISteamUnifiedMessages_ReleaseMethod
+T SteamAPI_ISteamUnifiedMessages_SendMethod
+T SteamAPI_ISteamUnifiedMessages_SendNotification
+T SteamAPI_ISteamUser_AdvertiseGame
+T SteamAPI_ISteamUser_BeginAuthSession
+T SteamAPI_ISteamUser_BIsBehindNAT
+T SteamAPI_ISteamUser_BLoggedOn
+T SteamAPI_ISteamUser_CancelAuthTicket
+T SteamAPI_ISteamUser_DecompressVoice
+T SteamAPI_ISteamUser_EndAuthSession
+T SteamAPI_ISteamUser_GetAuthSessionTicket
+T SteamAPI_ISteamUser_GetAvailableVoice
+T SteamAPI_ISteamUser_GetEncryptedAppTicket
+T SteamAPI_ISteamUser_GetGameBadgeLevel
+T SteamAPI_ISteamUser_GetHSteamUser
+T SteamAPI_ISteamUser_GetPlayerSteamLevel
+T SteamAPI_ISteamUser_GetSteamID
+T SteamAPI_ISteamUser_GetUserDataFolder
+T SteamAPI_ISteamUser_GetVoice
+T SteamAPI_ISteamUser_GetVoiceOptimalSampleRate
+T SteamAPI_ISteamUser_InitiateGameConnection
+T SteamAPI_ISteamUser_RequestEncryptedAppTicket
+T SteamAPI_ISteamUser_RequestStoreAuthURL
+T SteamAPI_ISteamUser_StartVoiceRecording
+T SteamAPI_ISteamUserStats_AttachLeaderboardUGC
+T SteamAPI_ISteamUserStats_ClearAchievement
+T SteamAPI_ISteamUserStats_DownloadLeaderboardEntries
+T SteamAPI_ISteamUserStats_DownloadLeaderboardEntriesForUsers
+T SteamAPI_ISteamUserStats_FindLeaderboard
+T SteamAPI_ISteamUserStats_FindOrCreateLeaderboard
+T SteamAPI_ISteamUserStats_GetAchievement
+T SteamAPI_ISteamUserStats_GetAchievementAchievedPercent
+T SteamAPI_ISteamUserStats_GetAchievementAndUnlockTime
+T SteamAPI_ISteamUserStats_GetAchievementDisplayAttribute
+T SteamAPI_ISteamUserStats_GetAchievementIcon
+T SteamAPI_ISteamUserStats_GetAchievementName
+T SteamAPI_ISteamUserStats_GetDownloadedLeaderboardEntry
+T SteamAPI_ISteamUserStats_GetGlobalStat
+T SteamAPI_ISteamUserStats_GetGlobalStat0
+T SteamAPI_ISteamUserStats_GetGlobalStatHistory
+T SteamAPI_ISteamUserStats_GetGlobalStatHistory0
+T SteamAPI_ISteamUserStats_GetLeaderboardDisplayType
+T SteamAPI_ISteamUserStats_GetLeaderboardEntryCount
+T SteamAPI_ISteamUserStats_GetLeaderboardName
+T SteamAPI_ISteamUserStats_GetLeaderboardSortMethod
+T SteamAPI_ISteamUserStats_GetMostAchievedAchievementInfo
+T SteamAPI_ISteamUserStats_GetNextMostAchievedAchievementInfo
+T SteamAPI_ISteamUserStats_GetNumAchievements
+T SteamAPI_ISteamUserStats_GetNumberOfCurrentPlayers
+T SteamAPI_ISteamUserStats_GetStat
+T SteamAPI_ISteamUserStats_GetStat0
+T SteamAPI_ISteamUserStats_GetUserAchievement
+T SteamAPI_ISteamUserStats_GetUserAchievementAndUnlockTime
+T SteamAPI_ISteamUserStats_GetUserStat
+T SteamAPI_ISteamUserStats_GetUserStat0
+T SteamAPI_ISteamUserStats_IndicateAchievementProgress
+T SteamAPI_ISteamUserStats_RequestCurrentStats
+T SteamAPI_ISteamUserStats_RequestGlobalAchievementPercentages
+T SteamAPI_ISteamUserStats_RequestGlobalStats
+T SteamAPI_ISteamUserStats_RequestUserStats
+T SteamAPI_ISteamUserStats_ResetAllStats
+T SteamAPI_ISteamUserStats_SetAchievement
+T SteamAPI_ISteamUserStats_SetStat
+T SteamAPI_ISteamUserStats_SetStat0
+T SteamAPI_ISteamUserStats_StoreStats
+T SteamAPI_ISteamUserStats_UpdateAvgRateStat
+T SteamAPI_ISteamUserStats_UploadLeaderboardScore
+T SteamAPI_ISteamUser_StopVoiceRecording
+T SteamAPI_ISteamUser_TerminateGameConnection
+T SteamAPI_ISteamUser_TrackAppUsageEvent
+T SteamAPI_ISteamUser_UserHasLicenseForApp
+T SteamAPI_ISteamUtils_BOverlayNeedsPresent
+T SteamAPI_ISteamUtils_CheckFileSignature
+T SteamAPI_ISteamUtils_GetAPICallFailureReason
+T SteamAPI_ISteamUtils_GetAPICallResult
+T SteamAPI_ISteamUtils_GetAppID
+T SteamAPI_ISteamUtils_GetConnectedUniverse
+T SteamAPI_ISteamUtils_GetCSERIPPort
+T SteamAPI_ISteamUtils_GetCurrentBatteryPower
+T SteamAPI_ISteamUtils_GetEnteredGamepadTextInput
+T SteamAPI_ISteamUtils_GetEnteredGamepadTextLength
+T SteamAPI_ISteamUtils_GetImageRGBA
+T SteamAPI_ISteamUtils_GetImageSize
+T SteamAPI_ISteamUtils_GetIPCCallCount
+T SteamAPI_ISteamUtils_GetIPCountry
+T SteamAPI_ISteamUtils_GetSecondsSinceAppActive
+T SteamAPI_ISteamUtils_GetSecondsSinceComputerActive
+T SteamAPI_ISteamUtils_GetServerRealTime
+T SteamAPI_ISteamUtils_GetSteamUILanguage
+T SteamAPI_ISteamUtils_IsAPICallCompleted
+T SteamAPI_ISteamUtils_IsOverlayEnabled
+T SteamAPI_ISteamUtils_IsSteamRunningInVR
+T SteamAPI_ISteamUtils_RunFrame
+T SteamAPI_ISteamUtils_SetOverlayNotificationInset
+T SteamAPI_ISteamUtils_SetOverlayNotificationPosition
+T SteamAPI_ISteamUtils_SetWarningMessageHook
+T SteamAPI_ISteamUtils_ShowGamepadTextInput
+T SteamAPI_ISteamVideo_GetVideoURL
+T SteamAPI_ISteamVideo_IsBroadcasting
+T SteamAPI_RegisterCallback
+T SteamAPI_RegisterCallResult
+T SteamAPI_RestartAppIfNecessary
+T SteamAPI_RunCallbacks
+T SteamAPI_SetBreakpadAppID
+T SteamAPI_SetMiniDumpComment
+T SteamAPI_SetTryCatchCallbacks
+T SteamAPI_Shutdown
+T SteamAPI_UnregisterCallback
+T SteamAPI_UnregisterCallResult
+T SteamAPI_UseBreakpadCrashHandler
+T SteamAPI_WriteMiniDump
+T SteamAppList
+T SteamApps
+T SteamClient
+T SteamController
+T SteamController_GetControllerState
+T SteamController_Init
+T SteamController_SetOverrideMode
+T SteamController_Shutdown
+T SteamController_TriggerHapticPulse
+T SteamFriends
+T SteamGameServer
+T SteamGameServerApps
+T SteamGameServer_BSecure
+T SteamGameServer_GetHSteamPipe
+T SteamGameServer_GetHSteamUser
+T SteamGameServer_GetIPCCallCount
+T SteamGameServer_GetSteamID
+T SteamGameServerHTTP
+T SteamGameServer_Init
+T SteamGameServer_InitSafe
+T SteamGameServerInventory
+T SteamGameServerNetworking
+T SteamGameServer_RunCallbacks
+T SteamGameServer_Shutdown
+T SteamGameServerStats
+T SteamGameServerUGC
+T SteamGameServerUtils
+T Steam_GetHSteamUserCurrent
+T SteamHTMLSurface
+T SteamHTTP
+T SteamInventory
+T SteamMatchmaking
+T SteamMatchmakingServers
+T SteamMusic
+T SteamMusicRemote
+T SteamNetworking
+T SteamRealPath
+T Steam_RegisterInterfaceFuncs
+T SteamRemoteStorage
+T Steam_RunCallbacks
+T SteamScreenshots
+T SteamUGC
+T SteamUnifiedMessages
+T SteamUser
+T SteamUserStats
+T SteamUtils
+T SteamVideo
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U symlink@@GLIBC_2.0
+U system@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U unlink@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+U operator new[](unsigned int)@@GLIBCXX_3.4
+U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+U operator new(unsigned int)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
