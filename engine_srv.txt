@@ -4162,7 +4162,6 @@ b net_maxpacketdrop
 b net_showfragments
 b net_start_command
 b orig_demo_message
-t ParseSteamInfFile(SteamInfVersionInfo_t&, char const*, char const*) [clone .constprop.64]
 r _ps_inv_sign_mask
 b r_ambientfraction
 b r_drawbatchdecals
@@ -4317,6 +4316,7 @@ b sv_instancebaselines
 t SvTagsChangeCallback(IConVar*, char const*, float)
 b sv_useexplicitdelete
 b s_WingedTestEdgeList
+t Sys_TryInitSteamInfo(void*, SteamInfVersionInfo_t&, char const*, char const*, bool) [clone .constprop.66]
 t vprof_cachemiss_Impl()
 t vprof_playback_start(CCommand const&)
 t CreateExecutionMarker()
@@ -11548,6 +11548,7 @@ r gzip_file_compress(CUtlString const&)::__FUNCTION__
 b Cbuf_ExecuteCommand(CCommand const&, cmd_source_t)::tm_fmt
 b SurfFlagsToSortGroup(msurface2_t*, int)::warningcount
 b SvTagsChangeCallback(IConVar*, char const*, float)::bTagsChangeCallback
+b Sys_TryInitSteamInfo(void*, SteamInfVersionInfo_t&, char const*, char const*, bool)::initState
 b g_exec_CompletionFunc(char const*, char (*) [64])::execComplete
 b HandleExecutionMarker(char const*, char const*)::cnt
 b InitializeCharacterSets()::s_CharacterSetInitialized
