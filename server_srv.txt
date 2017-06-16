@@ -1634,6 +1634,8 @@ U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
 U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
@@ -2244,7 +2246,9 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtok@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b studiorender
 b subs.7497
 b SuitDeviceBreather
@@ -2714,6 +2718,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t W_Precache()
@@ -3363,6 +3368,7 @@ t FireTargets(char const*, CBaseEntity*, CBaseEntity*, USE_TYPE, float)
 t FixupAngles(QAngle&)
 t FloorDivMod(double, double, int*, int*)
 t GetRealTime()
+t GetUniverse()
 t InitBodyQue()
 t IRotateAABB(matrix3x4_t const&, Vector const&, Vector const&, Vector&, Vector&)
 t kill_helper(CCommand const&, bool)
@@ -3410,6 +3416,7 @@ t UTIL_Remove(CBaseEntity*)
 t UTIL_Remove(IServerNetworkable*)
 t UTIL_Tracer(Vector const&, Vector const&, int, int, float, bool, char const*, int)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
@@ -3525,6 +3532,7 @@ t GetGibManager()
 t GetGlobalTeam(int)
 t GetLongFloorZ(Vector const&)
 t GetRandomSpot()
+t GetSteamUtils()
 t iHexCharToInt(char)
 t IsPointInCone(Vector const&, Vector const&, Vector const&, float, float)
 t ITEM_GiveAmmo(CBasePlayer*, float, char const*, bool)
@@ -3678,6 +3686,9 @@ t UTIL_TraceHull(Vector const&, Vector const&, Vector const&, Vector const&, uns
 t UTIL_TraceLine(Vector const&, Vector const&, unsigned int, ITraceFilter*, CGameTrace*)
 t UTIL_TraceLine(Vector const&, Vector const&, unsigned int, IHandleEntity const*, int, CGameTrace*)
 t UTIL_ViewPunch(Vector const&, QAngle, float, bool)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t VolumeToString(float)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
@@ -4016,7 +4027,7 @@ t UTIL_DecalTrace(CGameTrace*, char const*)
 t UTIL_HudMessage(CBasePlayer*, hudtextparms_s const&, char const*)
 t UTIL_SayTextAll(char const*, CBasePlayer*, bool)
 t UTIL_ScreenFade(CBaseEntity*, color32_s const&, float, float, int)
-t UTIL_StripToken(char const*, char*)
+t UTIL_StripToken(char const*, char*, int)
 t UTIL_TeamsMatch(char const*, char const*)
 t UTIL_TraceModel(Vector const&, Vector const&, Vector const&, Vector const&, CBaseEntity*, int, CGameTrace*)
 t UTIL_VecToPitch(matrix3x4_t const&, Vector const&)
@@ -4025,6 +4036,7 @@ t UTIL_WaterLevel(Vector const&, float, float)
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t WorldSpaceSlerp(CStudioHdr const*, Quaternion*, Vector*, mstudioseqdesc_t&, int, Quaternion const*, Vector const*, float, int)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
@@ -4057,6 +4069,7 @@ t FindPickerAILink(CBasePlayer*)
 t FindPickerAINode(CBasePlayer*, NodeType_e)
 t FindPickerEntity(CBasePlayer*)
 t FindPooledString(char const*)
+t FloatRGBAToColor(float, float, float, float)
 t GameStringSystem()
 t GetBodygroupName(CStudioHdr*, int)
 t GetFloorDistance(Vector const&)
@@ -4474,6 +4487,8 @@ t UTIL_ShowMessageAll(char const*)
 t UTIL_StringToVector(float*, char const*)
 t UTIL_VisualizeCurve(int, int, float)
 t VerifySequenceIndex(CStudioHdr*)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t AllocateStringHelper(char const*, ...)
 t BeginRestoreEntities()
 t Calc3WayBlendIndices(int, int, float, float, mstudioseqdesc_t const&, int*, float*)
@@ -4689,6 +4704,7 @@ t UTIL_StringFieldToInt(char const*, char const**, int)
 t UTIL_StringToIntArray(int*, int, char const*)
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t WeaponManager_AmmoMod(CBaseCombatWeapon*)
@@ -4796,8 +4812,10 @@ t UTIL_RandomBloodVector()
 t UTIL_ScreenShakeObject(CBaseEntity*, Vector const&, float, float, float, float, ShakeCommand_t, bool)
 t UTIL_ValidateSoundName(string_t&, char const*)
 t VecCheckThrowTolerance(CBaseEntity*, Vector const&, Vector, float, float)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t AnyPlayersInHierarchy_R(CBaseEntity*)
 t BonusMapChallengeUpdate(char const*, char const*, char const*, int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
@@ -4871,10 +4889,12 @@ t TimeModifierFunc_Linear(float)
 t UTIL_ClipTraceToPlayers(Vector const&, Vector const&, unsigned int, ITraceFilter*, CGameTrace*)
 t UTIL_ParentToWorldSpace(CBaseEntity*, Vector&, Quaternion&)
 t UTIL_ParentToWorldSpace(CBaseEntity*, Vector&, QAngle&)
+t UTIL_PlayerByCommandArg(char const*)
 t UTIL_PointAtNamedEntity(CBaseEntity*, string_t)
 t UTIL_StringToFloatArray(float*, int, char const*)
 t UTIL_WorldToParentSpace(CBaseEntity*, Vector&, Quaternion&)
 t UTIL_WorldToParentSpace(CBaseEntity*, Vector&, QAngle&)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t CC_CommentaryNotChanging()
@@ -4919,8 +4939,10 @@ t UTIL_AxisStringToUnitDir(Vector&, char const*)
 t UTIL_ClientPVSIsExpanded()
 t UTIL_GetHolidayForString(char const*)
 t UTIL_GetListenServerHost()
+t UTIL_PlayerByPartialName(char const*)
 t UTIL_SnapDirectionToAxis(Vector&, float)
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
 t WeaponManager_AddManaged(CBaseEntity*)
 t ActivityList_HighestIndex()
 t ActivityList_IndexForName(char const*)
@@ -5012,6 +5034,7 @@ t UTIL_IsCombineBallDefinite(CBaseEntity*)
 t UTIL_LoadActivityRemapFile(char const*, char const*, CUtlVector<CActivityRemap, CUtlMemory<CActivityRemap, int> >&)
 t UTIL_TraceLineFilterEntity(CBaseEntity*, Vector const&, Vector const&, unsigned int, int, CGameTrace*)
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t AllocateUniqueDataTableName(bool, char const*, ...)
 t BonusMapChallengeObjectives(int&, int&, int&)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
@@ -5086,9 +5109,11 @@ t Test_ProxyToggle_EnableProxy(CCommand const&)
 t Test_RemoveAllRandomEntities()
 t TimeModifierFunc_TimeSquared(float)
 t UTIL_GetPlayerConnectionInfo(int, int&, int&)
+t UTIL_GetRandomSoundFromEntry(char const*)
 t UTIL_IsFacingWithinTolerance(CBaseEntity*, Vector const&, float, float*)
 t UTIL_IsFacingWithinTolerance(CBaseEntity*, CBaseEntity*, float, float*)
 t UTIL_PointOnLineNearestPoint(Vector const&, Vector const&, Vector const&, bool)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t ActivityList_AddActivityEntry(char const*, int, bool)
 t AimTarget_ForceRepopulateList()
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
@@ -5321,10 +5346,12 @@ t HashBlock(void const*, unsigned int)
 t HintClear()
 t IsAntlion(CBaseEntity*)
 t KillFlare(CBaseEntity*, CBaseEntity*, float)
+t LerpColor(Color const&, Color const&, float)
+t LerpFloat(float, float, float)
 t LinkChild(CBaseEntity*, CBaseEntity*)
 t MD5_Print(unsigned char*, int)
 t MD5Update(MD5Context_t*, unsigned char const*, unsigned int)
-t nexttoken(char*, char const*, char)
+t nexttoken(char*, unsigned int, char const*, char)
 t PropIsGib(CBaseEntity*)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t bool Serialize<CUtlString>(CUtlBuffer&, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> > const&)
@@ -5378,6 +5405,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -6294,6 +6322,7 @@ b guard variable for datamap_t* DataMapInit<CSoundEnt>(CSoundEnt*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CSteamJet>(CSteamJet*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CWreckage>(CWreckage*)::nameHolder
 b guard variable for datamap_t* DataMapInit<DustTrail>(DustTrail*)::nameHolder
+b guard variable for GetUniverse()::steamUniverse
 b guard variable for AllocTempVector()::s_nIndex
 b guard variable for AllocTempVector()::s_vecTemp
 b guard variable for GetSceneManager()::s_SceneManager
@@ -9590,7 +9619,7 @@ b env_physexplosion
 b env_quadraticbeam
 b env_screenoverlay
 b env_texturetoggle
-t FindPassableSpace(CBasePlayer*, Vector const&, float, Vector&) [clone .constprop.68]
+t FindPassableSpace(CBasePlayer*, Vector const&, float, Vector&) [clone .constprop.69]
 b func_water_analog
 d g_ActivityDataOps
 t GameEventLessFunc(CHLTVGameEvent const&, CHLTVGameEvent const&)
@@ -9756,6 +9785,7 @@ b func_ladderendpoint
 b func_tankairboatgun
 b func_tankpulselaser
 b game_weapon_manager
+r g_BasicHTMLEntities
 d g_bCleanupDatObject
 b g_CEnvWind_ClassReg
 b g_CPhysBox_ClassReg
@@ -9840,6 +9870,7 @@ b grenade_pathfollower
 b g_SoundEmitterSystem
 b g_TEClientProjectile
 b g_TEHL2MPFireBullets
+r g_WhitespaceEntities
 t hammer_update_entity(CCommand const&)
 t hammer_update_entity(CCommand const&) [clone .part.40]
 b info_ladder_dismount
@@ -10095,6 +10126,7 @@ b g_CWeaponCycler_ClassReg
 b g_CWeaponPistol_ClassReg
 b g_DataObjectAccessSystem
 b g_LagCompensationManager
+r g_Tier1_FullHTMLEntities
 b info_target_gunshipcrash
 b info_vehicle_groundspawn
 b instanced_scripted_scene
@@ -10320,6 +10352,7 @@ d __g_CServerGameTags_singleton
 d __g_CServerGameTags_singleton
 d __g_CServerGameTags_singleton
 d __g_CServerGameTags_singleton
+r g_pszSimpleBBCodeReplacements
 b npc_enemyfinder_combinecannon
 b npc_freeze_unselected_command
 b physics_report_active_command
@@ -12878,6 +12911,7 @@ t CUtlVector<bool (*)(), CUtlMemory<bool (*)(), int> >::~CUtlVector()
 t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::SetCount(int)
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::Sort(int (*)(char const* const*, char const* const*))
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::~CUtlVector()
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::~CUtlVector()
 t CUtlVector<CBaseIssue::FailedVote*, CUtlMemory<CBaseIssue::FailedVote*, int> >::InsertBefore(int, CBaseIssue::FailedVote* const&)
@@ -35395,6 +35429,12 @@ d CSpeaker::m_DataMap
 t CSpeaker::~CSpeaker()
 t CSpeaker::~CSpeaker()
 t CSpeaker::~CSpeaker()
+t CSteamID::SetFromString(char const*, EUniverse)
+t CSteamID::SetFromSteam2String(char const*, EUniverse)
+t CSteamID::SetFromStringStrict(char const*, EUniverse)
+t CSteamID::Render(unsigned long long)
+t CSteamID::CSteamID(char const*, EUniverse)
+t CSteamID::CSteamID(char const*, EUniverse)
 t CTEDecal::GetServerClass()
 d CTEDecal::m_pClassSendTable
 t CTEDecal::YouForgotToImplementOrDeclareServerClass()
@@ -37306,6 +37346,8 @@ t CCommand::FindArg(char const*) const
 t CMissile::PhysicsSolidMaskForEntity() const
 t CPropAPC::MaxAttackRange() const
 t CRestore::GetReadPos() const
+t CSteamID::BValidExternalSteamID() const
+t CSteamID::Render() const
 t CUtlDict<EventGroup, int>::Find(char const*) const
 t CUtlDict<ResponseGroup, short>::Find(char const*) const
 t CUtlDict<ConceptHistory_t, int>::Find(char const*) const
@@ -44308,6 +44350,7 @@ b datamap_t* DataMapInit<CWreckage>(CWreckage*)::nameHolder
 d datamap_t* DataMapInit<CWreckage>(CWreckage*)::dataDesc
 b datamap_t* DataMapInit<DustTrail>(DustTrail*)::nameHolder
 d datamap_t* DataMapInit<DustTrail>(DustTrail*)::dataDesc
+b GetUniverse()::steamUniverse
 b DescribeAxis(int)::sz
 b UTIL_VarArgs(char const*, ...)::string
 b V_pretifymem(float, int, bool)::output
@@ -44328,6 +44371,7 @@ d FirstBitInWord(unsigned int, int)::firstBitLUT
 b GameStartFrame()::tm_fmt
 b LookupActivity(CStudioHdr*, char const*)::tm_fmt
 b LookupSequence(CStudioHdr*, char const*)::tm_fmt
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b VolumeToString(float)::sz
 b AllocTempVector()::s_nIndex
 b AllocTempVector()::s_vecTemp
@@ -45014,6 +45058,8 @@ b CSoundParametersInternal::SoundLevelToString() const::sz
 b CBeam::GetAbsEndPos() const::vecAbsPos
 b CAI_Path::NextWaypointPos() const::invalid
 b CAI_Path::BaseGoalPosition() const::vecResult
+b CSteamID::Render() const::nBuf
+b CSteamID::Render() const::rgchBuf
 b variant_t::Entity() const::hNull
 b variant_t::ToString() const::szBuf
 r CDecal::StaticDecal()::CTraceFilterValidForDecal::ShouldHitEntity(IHandleEntity*, int)::ppszIgnoredClasses

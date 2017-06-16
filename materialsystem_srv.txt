@@ -241,7 +241,10 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
 U isgraph@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
@@ -421,7 +424,9 @@ U strspn@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b subs.7497
 U swprintf@@GLIBC_2.2
 U tanf@@GLIBC_2.0
@@ -510,6 +515,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -536,6 +542,7 @@ t SmoothCurve(float)
 t SpinPresent()
 t _SSE_SinCos(float, float*, float*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
@@ -628,6 +635,9 @@ t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
 t TexStageFromKV(char const*, KeyValues*)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t int V_sprintf_safe<260u>(char (&) [260u], char const*, ...)
@@ -673,6 +683,7 @@ t TextureToLinear(int)
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t BetterResolution(int, int, int)
@@ -787,6 +798,8 @@ t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertE
 t SetupMatrixIdentity()
 t SrgbGammaTo360Gamma(float)
 t TempCreateInterface(char const*, int*)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t GetInterpolationData(float const*, float const*, int, int, float, bool, float*, float*, float*)
@@ -820,6 +833,7 @@ t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&
 t Sys_IsDebuggerPresent()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -844,8 +858,10 @@ t RestoreColorCorrection(int)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
 t SetupMatrixTranslation(Vector const&)
 t stb_compress_dxt_block(unsigned char*, unsigned char const*, int, int)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
@@ -862,6 +878,7 @@ t MatrixBuildPerspectiveX(VMatrix&, double, double, double, double)
 t ParseInverseRangeFromKV(KeyValues*, void*)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
 t RenderWireframeSweptBox(Vector const&, Vector const&, QAngle const&, Vector const&, Vector const&, Color, bool)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t AccumulatePatchKeyValues(KeyValues&, KeyValues&)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
@@ -875,6 +892,7 @@ t RandomVectorInUnitSphere(Vector*)
 t SetupDirtyDiskReportFunc()
 t _SSE_VectorNormalizeFast(Vector&)
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t Q_RemoveAllEvilCharacters(char*)
@@ -887,6 +905,7 @@ t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, 
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, Frustum_t&)
 t GeneratePolygonIndexBuffer(unsigned short*, int, int)
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
@@ -905,6 +924,7 @@ t MatrixBuildRotationAboutAxis(VMatrix&, Vector const&, float)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t Pow_FixedPoint_Exponent_SIMD(float __vector(4) const&, int)
 t Pow_FixedPoint_Exponent_SIMD(float __vector const&, int)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -966,6 +986,7 @@ t AngleDiff(float, float)
 t FastPow10(float)
 t FloorPow2(int)
 t HashBlock(void const*, unsigned int)
+t nexttoken(char*, unsigned int, char const*, char)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t RenderBox(Vector const&, QAngle const&, Vector const&, Vector const&, Color, bool, bool)
 t RenderBox(Vector const&, QAngle const&, Vector const&, Vector const&, Color, IMaterial*, bool)
@@ -988,6 +1009,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -1284,6 +1306,7 @@ b s_nTotalTexelCount
 b s_pTempMaterialVar
 t ApplyPatchKeyValues(KeyValues&, KeyValues&)
 t CalcHemisphereColor(SphereCalc_t*, float, float) [clone .constprop.67]
+r g_BasicHTMLEntities
 b __g_CreateICVar_reg
 t GenerateBoxVertices(Vector const&, QAngle const&, Vector const&, Vector const&, Vector*)
 b mat_depthbias_decal
@@ -1296,6 +1319,7 @@ b s_pVTFTexturePaired
 b s_pWireframeIgnoreZ
 b s_RenderedQuadHisto
 b g_CleanupSymbolTable
+r g_WhitespaceEntities
 b mat_bufferprimitives
 b mat_depthbias_normal
 b mat_softwarelighting
@@ -1328,6 +1352,7 @@ b s_bEnableThreadedAccess
 b s_bMaterialsInitialized
 b s_TempFileSystemFactory
 t ForceTextureIntoHardware(ITexture*, IMaterial*, IMaterialVar*)
+r g_Tier1_FullHTMLEntities
 b mat_spew_on_texture_size
 b r_flashlightdepthtexture
 b s_nOptimalReadBufferSize
@@ -1340,6 +1365,7 @@ b mat_monitorgamma_tv_enabled
 b r_waterforcereflectentities
 t mat_showmiplevels_Callback_f(IConVar*, char const*, float)
 t AccumulateRecursiveVmtPatches(KeyValues&, KeyValues**, KeyValues const&, char const*, CUtlVector<void*, CUtlMemory<void*, int> >*)
+r g_pszSimpleBBCodeReplacements
 b mat_monitorgamma_tv_range_max
 b mat_monitorgamma_tv_range_min
 b mat_slopescaledepthbias_decal
@@ -1765,6 +1791,7 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<void (*)(int), CUtlMemory<void (*)(int), int> >::InsertBefore(int, void (* const&)(int))
 t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::InsertBefore(int, void (* const&)())
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::GrowVector(int)
 t CUtlVector<void*, CUtlMemory<void*, int> >::ShiftElementsRight(int, int)
@@ -4563,6 +4590,9 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
@@ -6236,6 +6266,7 @@ r typeinfo for CMorph
 r typeinfo for ConVar
 r typeinfo for IMorph
 r typeinfo for IConVar
+r typeinfo for CFmtStrN<256, false>
 r typeinfo for CFunctor
 r typeinfo for CTCStage
 r typeinfo for CTexture
@@ -6450,6 +6481,7 @@ r typeinfo name for CMorph
 r typeinfo name for ConVar
 r typeinfo name for IMorph
 r typeinfo name for IConVar
+r typeinfo name for CFmtStrN<256, false>
 r typeinfo name for CFunctor
 r typeinfo name for CTCStage
 r typeinfo name for CTexture
@@ -6654,6 +6686,7 @@ r vtable for CMorph
 r vtable for ConVar
 r vtable for IMorph
 r vtable for IConVar
+r vtable for CFmtStrN<256, false>
 r vtable for CFunctor
 r vtable for CTCStage
 r vtable for CTexture
@@ -6685,6 +6718,7 @@ b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
 b IsEmulatingGL()::bIsEmulatingGL
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b COM_GetModDirectory()::modDir
 d stb_compress_dxt_block(unsigned char*, unsigned char const*, int, int)::init
 r CreateTextureCompositor(int, int, char const*, int, unsigned long long, KeyValues*, unsigned int)::__FUNCTION__
@@ -6876,6 +6910,7 @@ b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b CMorph::AccumulateMorph(int)::tm_fmt
 b CMorph::HandleMorphStats(int, int, int)::s_bLastMorphStats
 b CMorph::RenderMorphWeights(IMatRenderContext*, int, int, MorphWeight_t const*)::tm_fmt
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 r CTCStage::Render(ITexture*, IMaterial*, CUtlVector<CTCStageResult_t, CUtlMemory<CTCStageResult_t, int> > const&, CTextureCompositor*)::__FUNCTION__
 b CTCStage::Render(ITexture*, IMaterial*, CUtlVector<CTCStageResult_t, CUtlMemory<CTCStageResult_t, int> > const&, CTextureCompositor*)::tm_fmt
 b CTexture::InitRenderTarget(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)::id

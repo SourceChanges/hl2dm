@@ -417,8 +417,11 @@ U inet_addr@@GLIBC_2.0
 T _init
 t init_dwarf_reg_size_table
 U ioctl@@GLIBC_2.0
+U isalnum@@GLIBC_2.0
 U isalpha@@GLIBC_2.0
 U isatty@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 t istrsenvisx
 U isupper@@GLIBC_2.0
@@ -795,7 +798,9 @@ T strsvis
 T strsvisx
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 T strunvis
 T strunvisx
 T strvis
@@ -1049,6 +1054,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -1074,6 +1080,7 @@ t Q_URLEncode(char*, int, char const*, int)
 t SmoothCurve(float)
 t _SSE_SinCos(float, float*, float*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
@@ -1162,6 +1169,9 @@ t StringLessThan(char const* const&, char const* const&)
 t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t int V_sprintf_safe<260u>(char (&) [260u], char const*, ...)
@@ -1204,6 +1214,7 @@ t UTIL_GetBaseDir()
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t ConcatTransforms(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1299,6 +1310,8 @@ t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertE
 t SplitFileComponents(char const*, char*, char*, char*)
 t SrgbGammaTo360Gamma(float)
 t UTIL_ComputeBaseDir(char*, int)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t DoesPathExistAlready(char const*, char const*)
@@ -1325,6 +1338,7 @@ t Sys_IsDebuggerPresent()
 t UTIL_GetExecutableDir()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -1340,8 +1354,10 @@ t QuaternionBlendNoAlign(Quaternion const&, Quaternion const&, float, Quaternion
 t QuaternionSlerpNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
 t SetSteamUserPassphrase(KeyValues*, CSteamEnvVars&)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
@@ -1359,6 +1375,7 @@ t MD5_ProcessSingleBuffer(void const*, int, MD5Value_t&)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
 t Rijndael_VC60Workaround()
 t SetSuggestGameInfoDirFn(bool (*)(CFSSteamSetupInfo const*, char*, int, bool*))
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t ConcatTransforms_Aligned(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1368,6 +1385,7 @@ t GetCStringCharConversion()
 t RandomVectorInUnitCircle(Vector2D*)
 t RandomVectorInUnitSphere(Vector*)
 t _SSE_VectorNormalizeFast(Vector&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t Q_RemoveAllEvilCharacters(char*)
@@ -1377,6 +1395,7 @@ t FileSystem_LoadSearchPaths(CFSSearchPathsInit&)
 t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float, Frustum_t&)
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, Frustum_t&)
 t UseOptimalBufferAllocation()
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
@@ -1392,6 +1411,7 @@ t FileSystem_ClearSteamEnvVars()
 t FileSystem_UseVProjectBinDir(bool)
 t findFileInDirCaseInsensitive(char const*, char*, unsigned int)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1454,6 +1474,7 @@ t FloorPow2(int)
 t HashBlock(void const*, unsigned int)
 t MD5_Print(unsigned char*, int)
 t MD5Update(MD5Context_t*, unsigned char const*, unsigned int)
+t nexttoken(char*, unsigned int, char const*, char)
 t pathmatch(char const*, char**, bool, char*, unsigned int)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t RunServer()
@@ -1476,6 +1497,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -1667,6 +1689,7 @@ r _ps_inv_sign_mask
 d s_DefaultAccessor
 t AsyncWriteJobFilter(CJob*)
 t editline_threadproc(void*)
+r g_BasicHTMLEntities
 b g_nHighPriorityJobs
 t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
 t StripTrailingString(char*, char const*)
@@ -1674,6 +1697,7 @@ b async_resume_command
 b g_CleanupSymbolTable
 b g_nAnonymousIOMemory
 b g_ProcessingCommands
+r g_WhitespaceEntities
 r _ps_minus_cephes_DP1
 r _ps_minus_cephes_DP2
 r _ps_minus_cephes_DP3
@@ -1689,10 +1713,12 @@ b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
 t editline_cleanup_handler(void*)
 b g_nAnonymousIOMemoryPeak
+r g_Tier1_FullHTMLEntities
 b g_nJobsToFinishBeforePlay
 b loader_dump_table_command
 b s_StaticCryptoConstructor
 d s_ResourcePreloadAnonymous
+r g_pszSimpleBBCodeReplacements
 b f3
 t FileSystem_AddLoadedSearchPath(CFSSearchPathsInit&, char const*, char const*, bool) [clone .isra.1]
 d __g_CDedicatedExports_singleton
@@ -1869,6 +1895,8 @@ t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<void (*)(char const*, char const*), int>::Grow(int)
 t CUtlMemory<void (*)(char const*, char const*), int>::Purge()
+t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<CBaseFileSystem::CPathIDInfo*, int>::Grow(int)
 t CUtlMemory<CBaseFileSystem::CPathIDInfo*, int>::Purge()
 t CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int>::Grow(int)
@@ -2025,6 +2053,8 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<char*, CUtlMemory<char*, int> >::RemoveMultipleFromHead(int)
 t CUtlVector<char*, CUtlMemory<char*, int> >::Sort(int (*)(char* const*, char* const*))
 t CUtlVector<void (*)(char const*, char const*), CUtlMemory<void (*)(char const*, char const*), int> >::InsertBefore(int, void (* const&)(char const*, char const*))
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CBaseFileSystem::CPathIDInfo*, CUtlMemory<CBaseFileSystem::CPathIDInfo*, int> >::InsertBefore(int, CBaseFileSystem::CPathIDInfo* const&)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
@@ -2964,6 +2994,9 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
@@ -8762,6 +8795,7 @@ r typeinfo for ConVar
 r typeinfo for CNetAPI
 r typeinfo for IConVar
 r typeinfo for INetAPI
+r typeinfo for CFmtStrN<256, false>
 r typeinfo for CFunctor
 r typeinfo for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -9407,6 +9441,7 @@ r typeinfo name for ConVar
 r typeinfo name for CNetAPI
 r typeinfo name for IConVar
 r typeinfo name for INetAPI
+r typeinfo name for CFmtStrN<256, false>
 r typeinfo name for CFunctor
 r typeinfo name for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo name for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -10318,6 +10353,7 @@ r vtable for IZip
 r vtable for ConVar
 r vtable for CNetAPI
 r vtable for IConVar
+r vtable for CFmtStrN<256, false>
 r vtable for CFunctor
 r vtable for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r vtable for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -10839,6 +10875,7 @@ b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b UTIL_GetBaseDir()::basedir
 b UTIL_GetExecutableDir()::exedir
 b Bias(float, float)::lastExponent
@@ -10935,6 +10972,7 @@ b CCrypto::RSASign(unsigned char const*, unsigned int, unsigned char*, unsigned 
 b CCrypto::HexDecode(char const*, unsigned char*, unsigned int*)::tm_fmt
 b CCrypto::HexEncode(unsigned char const*, unsigned int, char*, unsigned int)::tm_fmt
 b CNetAPI::AdrToString(netadr_s*)::s
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 b CryptoPP::HexDecoder::GetDefaultDecodingLookupArray()::s_initialized
 b CryptoPP::HexDecoder::GetDefaultDecodingLookupArray()::s_array
 b CryptoPP::TheBitBucket()::bitBucket

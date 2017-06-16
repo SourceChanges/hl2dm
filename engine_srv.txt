@@ -408,6 +408,7 @@ t _GLOBAL__sub_I_sv_maxupdaterate
 t _GLOBAL__sub_I_sv_namechange_cooldown_seconds
 t _GLOBAL__sub_I_sv_shutdown_timeout_minutes
 t _GLOBAL__sub_I_sv_steamblockingcheck
+t _GLOBAL__sub_I_sv_use_steam_voice
 t _GLOBAL__sub_I_toolframework
 t _GLOBAL__sub_I_tv_snapshotrate
 t _GLOBAL__sub_I_voiceserver_impl.cpp
@@ -497,7 +498,6 @@ t _GLOBAL__sub_I__ZN9ILocalize20ConvertANSIToUnicodeEPKcPwi
 t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 t _GLOBAL__sub_I__ZNK10CModelInfo13GetModelIndexEPKc
 t _GLOBAL__sub_I__ZNK11studiohdr_t9pAnimdescEi
-t _GLOBAL__sub_I__ZNK13CLC_VoiceData8ToStringEv
 b g_Log
 b g_LostVideoMemory
 b g_MainViewForward
@@ -725,6 +725,8 @@ T _init
 t init_dwarf_reg_size_table
 U ioctl@@GLIBC_2.0
 U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U ispunct@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
@@ -1109,7 +1111,9 @@ U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b studiorender
 b subs.7497
 b sv
@@ -1377,6 +1381,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AddNeighbor(CCoreDispInfo*, int, int, NeighborSpan, CCoreDispInfo*, int, NeighborSpan)
@@ -1435,6 +1440,7 @@ t _SSE_SinCos(float, float*, float*)
 t SV_ResetPVS(unsigned char*, int)
 t VOX_LRUInit(sentencegroup_t*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t zlibVersion()
@@ -1724,6 +1730,9 @@ t Sys_LoadModule(char const*, Sys_Flags)
 t Sys_MessageBox(char const*, char const*, bool)
 t UnallowVerts_R(CDispUtilsHelper*, CVertIndex const&, int&)
 t UpdateProgress(TGameStatsParameters const&, char const*, ...)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t VOX_AddNumbers(char*, CUtlVector<WordBuf, CUtlMemory<WordBuf, int> >&)
 t VOX_DeleteWord(int)
 t VOX_TouchSound(char const*, CUtlDict<int, int>&, CUtlRBTree<ccpair, int, bool (*)(ccpair const&, ccpair const&), CUtlMemory<UtlRBTreeNode_t<ccpair, int>, int> >&, bool)
@@ -1840,6 +1849,7 @@ t VectorXY_Encode(unsigned char const*, DVariant*, SendProp const*, bf_write*, i
 t VectorXY_IsZero(unsigned char const*, DVariant*, SendProp const*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t VOX_InsertWords(int, int, char*, char*, char*)
 t VOX_ParseString(char*)
 t VOX_TouchSounds(CUtlDict<int, int>&, CUtlRBTree<ccpair, int, bool (*)(ccpair const&, ccpair const&), CUtlMemory<UtlRBTreeNode_t<ccpair, int>, int> >&, bool)
@@ -2245,9 +2255,11 @@ t Sys_CompareFileTime(long, long)
 t unzCloseCurrentFile(unz_s*)
 t unzGetGlobalComment(unz_s*, char*, unsigned long)
 t VectorXY_DecodeZero(DecodeInfo*)
+t V_IsMeanUnderscoreW(wchar_t)
 t VOX_GetMapNameIndex(char const*)
 t VOX_LookupMyVirtual(int, char*, char, int)
 t VOX_ParseWordParams(char*, voxword_t*, int)
+t V_URLContainsDomain(char const*, char const*)
 t AddModelDebugOverlay(DrawModelInfo_t const&, DrawModelResults_t const&, Vector const&)
 t AllocateStringHelper(char const*, ...)
 t AllocChangeFrameList(int, int)
@@ -2335,6 +2347,7 @@ t AsyncUpload_QueueData(char const*, unsigned int, unsigned int, void const*)
 t CalcBarycentricCooefs(Vector const&, Vector const&, Vector const&, Vector const&, float&, float&, float&)
 t CalcDistanceSqrToLine(Vector const&, Vector const&, Vector const&, float*)
 t CalcSqrDistanceToAABB(Vector const&, Vector const&, Vector const&)
+t Cbuf_EscapeCommandArg(char const*, char*, unsigned int)
 t CheckSpecialCheatVars()
 t CheckVarRange_Generic(ConVar*, int, int)
 t CM_GetAreaPortalPlane(Vector const&, int, VPlane*)
@@ -2420,6 +2433,7 @@ t unzGetLocalExtrafield(unz_s*, void*, unsigned int)
 t UpdateNameFromSteamID(IConVar*, CSteamID*)
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t VOX_AddMyVirtualWords(int, char*, char, CUtlVector<WordBuf, CUtlMemory<WordBuf, int> >&)
 t VOX_ParseLineCommands(char*, int)
 t V_SetCurrentDirectory(char const*)
@@ -2494,9 +2508,11 @@ t SV_MaybeWriteSendTable(SendTable*, bf_write&, bool)
 t Sys_InitAuthentication()
 t VectorXY_CompareDeltas(SendProp const*, bf_read*, bf_read*)
 t VectorXY_IsEncodedZero(SendProp const*, bf_read*)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
 t VProfPlayback_StepBack()
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t Array_GetTypeNameString()
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
@@ -2560,6 +2576,7 @@ t SV_BuildSendTablesArray(ServerClass*, SendTable**, int)
 t SV_ComputeClassInfosCRC(unsigned int*)
 t SV_ExecuteRemoteCommand(char const*, int)
 t void TesselateDisplacement_R<CEngineTesselateHelper>(CEngineTesselateHelper*, CVertIndex const&, int, int)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t VOX_CompactSentenceFile()
 t VOX_GetNextEntnameIndex()
 t VOX_LookupGlobalVirtual(int, int, char*, int)
@@ -2625,6 +2642,7 @@ t unzStringFileNameCompare(char const*, char const*, int)
 t UpdateStudioRenderConfig()
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
 t Vector_GetTypeNameString()
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
 t BuildPropOffsetToIndexMap(CSendTablePrecalc*, CStandardSendProxies const*)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
@@ -2712,6 +2730,7 @@ t UpdateMaterialSystemConfig()
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
 t VectorXY_GetTypeNameString()
 t VOX_LookupGlobalSeqVirtual(int, int, char*, int)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t AllocateUniqueDataTableName(bool, char const*, ...)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -2779,6 +2798,7 @@ t SendTable_GenerateProxyPaths(CSendTablePrecalc*, int)
 t SendTable_WriteAllDeltaProps(SendTable const*, void const*, int, void const*, int, int, bf_write*)
 t SV_CreateNetworkStringTables()
 t VerifyNeighborVertConnection(CDispUtilsHelper*, CVertIndex const&, CDispUtilsHelper const*, CVertIndex const&, int)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t VOX_LookupRangeHeadingOrGrid(int, char*, channel_t*, int, char**, char**, char**, int*, bool)
 t VProfPlayback_GetCurrentTick()
 t Win32UploadGameStatsBlocking(TGameStatsParameters const&)
@@ -3024,6 +3044,7 @@ t IsComment(char*)
 t Key_Event(InputEvent_t const&)
 t MD5_Print(unsigned char*, int)
 t MD5Update(MD5Context_t*, unsigned char const*, unsigned int)
+t nexttoken(char*, unsigned int, char const*, char)
 t pathmatch(char const*, char**, bool, char*, unsigned int)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t RenderBox(Vector const&, QAngle const&, Vector const&, Vector const&, Color, bool, bool)
@@ -3060,6 +3081,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -3920,6 +3942,7 @@ t sv_netspike_f(CCommand const&)
 t SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)
 b sv_redirected
 b sv_redirectto
+b sv_voicecodec
 b texgammatable
 b tv_deltacache
 b tv_maxclients
@@ -4246,6 +4269,7 @@ t CEventInfo_LessFunc(CEventInfo* const&, CEventInfo* const&)
 t ComputeCenterMatrix(Vector const&, QAngle const&, Vector const&, Vector const&, matrix3x4_t&) [clone .constprop.50]
 r configuration_table
 b differences_command
+r g_BasicHTMLEntities
 r g_bEdgeNeighborFlip
 b g_ChildNodeIndexMul
 b g_EdgeVisualization
@@ -4293,6 +4317,7 @@ b g_BitBufErrorHandler
 b g_CleanupSymbolTable
 b g_pServerDTIFilename
 b g_QueuedPacketSender
+r g_WhitespaceEntities
 b incrementvar_command
 b mat_powersavingsmode
 b mem_vcollide_command
@@ -4415,6 +4440,7 @@ b fs_warning_level_command
 b g_QuarterSizedFBTexture0
 b g_QuarterSizedFBTexture1
 b g_ResolvedFullFrameDepth
+r g_Tier1_FullHTMLEntities
 b g_WaterReflectionTexture
 b g_WaterRefractionTexture
 b mem_test_every_n_seconds
@@ -4482,6 +4508,7 @@ t FindAndRemoveExecutionMarker(int)
 t StaticPropColorTexelCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
 t vprof_generate_report_budget(CCommand const&)
 b vprof_playback_start_command
+r g_pszSimpleBBCodeReplacements
 b mat_monitorgamma_tv_range_max
 b mat_monitorgamma_tv_range_min
 t mat_powersavingsmode_callback(IConVar*, char const*, float)
@@ -5231,6 +5258,8 @@ t CUtlMemory<RecvProp const*, int>::Grow(int)
 t CUtlMemory<RecvProp const*, int>::Purge()
 t CUtlMemory<SendProp const*, int>::Grow(int)
 t CUtlMemory<SendProp const*, int>::Purge()
+t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<CInitTracker::InitFunc*, int>::Grow(int)
 t CUtlMemory<CInitTracker::InitFunc*, int>::Purge()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
@@ -5580,6 +5609,8 @@ t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::SetCount
 t CUtlVector<RecvProp const*, CUtlMemory<RecvProp const*, int> >::SetCount(int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::SetCount(int)
 t CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> >::CopyArray(SendProp const* const*, int)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CInitTracker::InitFunc*, CUtlMemory<CInitTracker::InitFunc*, int> >::InsertBefore(int, CInitTracker::InitFunc* const&)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<CQueuedPacketSender::CQueuedPacket*, CUtlMemory<CQueuedPacketSender::CQueuedPacket*, int> >::FastRemove(int)
@@ -6178,7 +6209,7 @@ t CTSListBase::~CTSListBase()
 t CTSListBase::~CTSListBase()
 t CVProfScope::~CVProfScope()
 t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope() [clone .constprop.77]
+t CVProfScope::~CVProfScope() [clone .constprop.78]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t IDemoPlayer::~IDemoPlayer()
 t IDemoPlayer::~IDemoPlayer()
@@ -7655,7 +7686,7 @@ t CBaseClientState::FileRequested(char const*, unsigned int)
 t CBaseClientState::GetClientName()
 t CBaseClientState::SendStringCmd(char const*)
 t CBaseClientState::CheckForResend()
-t CBaseClientState::CheckForResend() [clone .part.26]
+t CBaseClientState::CheckForResend() [clone .part.27]
 t CBaseClientState::GetClientClass(int)
 t CBaseClientState::ProcessSetView(SVC_SetView*)
 t CBaseClientState::SetSignonState(int, int)
@@ -11477,6 +11508,7 @@ b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, 
 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
 t RecvTable_Init(RecvTable**, int)::CPropVisitor::Visit_R(RecvTable*)
 t RecvTable_Term(bool)::CPropVisitor::Visit_R(RecvTable*)
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b AllocTempVector()::s_nIndex
 b AllocTempVector()::s_vecTemp
 b COM_SetupLogDir(char const*)::pathsetup
