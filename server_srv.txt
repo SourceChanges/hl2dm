@@ -36435,7 +36435,7 @@ t CTextStat::CTextStat(void (*)(IFileSystem*, void*, void*), void*, CTextStatsMg
 t CTextStat::CTextStat()
 t CTextStat::~CTextStat()
 t CTextStat::~CTextStat()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 U CVProfile::OutputReport(int, char const*, int)
 U CVProfile::BudgetGroupNameToBudgetGroupID(char const*)
 t CWreckage::GetBaseMap()

@@ -2971,7 +2971,7 @@ t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
 t CUtlQueue<unsigned char, CUtlMemory<unsigned char, int> >::Insert(unsigned char const&)
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t void ILocalize::ConstructString<wchar_t>(wchar_t*, int, wchar_t const*, int, ...)
 t ILocalize::ConvertANSIToUnicode(char const*, wchar_t*, int)
 t ILocalize::ConvertUnicodeToANSI(wchar_t const*, char*, int)

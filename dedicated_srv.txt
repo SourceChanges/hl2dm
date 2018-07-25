@@ -5813,7 +5813,7 @@ t CPackFile::CPackFile()
 t CPackFile::~CPackFile()
 t CPackFile::~CPackFile()
 t CPackFile::~CPackFile()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t KeyValues::deleteThis()
 t KeyValues::GetWString(char const*, wchar_t const*)
 t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool, bool)

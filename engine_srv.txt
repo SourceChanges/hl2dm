@@ -75,7 +75,7 @@ T CreateInterface
 U CreateSimpleThread
 r CSWTCH.184
 r CSWTCH.310
-r CSWTCH.448
+r CSWTCH.447
 r CSWTCH.6
 d __CTOR_END__
 d __CTOR_LIST__
@@ -4232,7 +4232,7 @@ b mod_forcetouchdata
 b mod_load_showstall
 b namelockid_command
 b net_status_command
-t OpenSocketInternal(int, int, int, char const*, int, bool, int) [clone .constprop.115]
+t OpenSocketInternal(int, int, int, char const*, int, bool, int) [clone .constprop.116]
 t plugin_unpause_all(CCommand const&)
 b r_colorstaticprops
 b r_decalstaticprops
@@ -9516,7 +9516,7 @@ t CSentence::CSentence()
 t CSentence::~CSentence()
 t CSentence::~CSentence()
 t CStatTime::GetTime()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t CVertInfo::CVertInfo()
 t CVertInfo::CVertInfo()
 U CVProfile::OutputReport(int, char const*, int)
@@ -9903,7 +9903,7 @@ t CReplayServer::IsMultiplayer() const
 t CReplayServer::GetName() const
 t CReplayServer::IsReplay() const
 t unsigned int CUtlHashtable<unsigned int, int, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.165]
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.89] [clone .constprop.95]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.90] [clone .constprop.96]
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.56] [clone .constprop.58]
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const
 t unsigned int CUtlHashtable<CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::IndirectIndex, empty_t, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::HashProxy, CUtlStableHashtable<model_t*, empty_t, CModelInfo::ModelFileHandleHash, CModelInfo::ModelFileHandleEq, short, void*>::EqualProxy, void*>::DoLookup<void*>(void*, unsigned int, unsigned int*) const

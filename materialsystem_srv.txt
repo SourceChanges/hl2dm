@@ -4790,7 +4790,7 @@ t CMaterial::NeedsFullFrameBufferTexture(bool)
 t CMaterial::ReloadFromWhitelistIfMarked()
 t CMaterial::RefreshPreservingMaterialVars()
 t CMaterial::DecideShouldReloadFromWhitelist(IFileList*)
-t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.52]
+t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.53]
 t CMaterial::SetUseFixedFunctionBakedLighting(bool)
 t CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
 t CMaterial::FindVar(char const*, bool*, bool)
@@ -4840,7 +4840,7 @@ t ConVarRef::ConVarRef(char const*, bool)
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::Insert(AsyncReadJob_t* const&)
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::~CUtlQueue()
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::~CUtlQueue()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::Push(CMatRenderContextBase::MatrixStackItem_t const&)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::CopyFrom(CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> > const&)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::GrowStack()
